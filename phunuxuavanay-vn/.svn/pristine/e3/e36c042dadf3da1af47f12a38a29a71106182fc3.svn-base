@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Category</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="blabla" />
+    <meta name="msnbot" content="Load noi dung cua Description">
+    <meta name="keywords" content="key, key2" />
+    <meta name="author" content="key, key2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="#" type="image/x-icon">
+    
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/include.js"></script>
+</head>
+
+<body>
+   <article class="top-page color-gay">
+       <div class="top-wrap flex flex-space-between flex-align-center">
+            <div class="info-daily">
+                <p>Thứ hai, 27/2/2017 21:48 GMT+7</p>
+            </div>
+            <ul class="info-contact flex flex-align-center">
+                <li>Hotline : 0908 711 327</li>
+                <li>Email : info@phunuxuavanay.vn</li>
+                <li>Báo giá quảng cáo</li>
+            </ul>
+            <div class="info-search flex-align-center">
+                <input class="search" type="search" title="Search" placeholder="Nhập từ khóa cần tìm">
+                <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+   </article>
+       
+    <article class="wrap-page">
+        <header>
+            <div class="top2 flex flex-space-between">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="advbanner">
+                    <img src="images/advbanner.png" alt="">
+                </div>
+            </div>
+            <nav class="top3 bg-pink">
+                <ul class="top-menu flex">
+                    <li class="icon-home"><a href="#"><img src="images/icon-home.png" alt=""></a></li>
+                    <li class="current"><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                    <li><a href="#">Menu 5</a></li>
+                    <li><a href="#">Menu 6</a></li>
+                    <li><a href="#">Menu 7</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="breadCrumb">
+            <ul class="breadCrumb-war flex">
+                <li><a href="#">BreadCrumb 1</a></li>
+                <li><a href="#">BreadCrumb 2</a></li>
+                <li><a href="#">BreadCrumb 3</a></li>
+                <li><a href="#">BreadCrumb 4</a></li>
+                <li><a href="#">BreadCrumb 5</a></li>
+                <li><a href="#">BreadCrumb 5</a></li>
+            </ul>
+        </section>
+        
+        <section class="main_content">
+            <div class="wrap category">
+               <!--Left Primary------------------------------------------------------>
+                <div class="leftprimary">
+                    <!--Category------------------------------------------------------- -->
+                    <div class="cate no_header styleBon">
+                        <!--Category Box------------------------------------------------------>
+                        <div class="category_box">
+                            <div class="cate_header">
+                                <h2><a href="#">Tên Category</a></h2>
+                                <ul class="cate-item">
+                                    <li><a href="#">cate on</a></li>
+                                    <li><a href="#">cate on</a></li>
+                                    <li><a href="#">cate on</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!--Iten new box------------------------------------------------------>
+                            <div class="itemnews-box">
+                                <!--Iten new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                               <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                   <span class="supportIcon">
+                                                        <span class="hot">HOT</span>
+                                                        <span class="fa fa-video-camera"></span>
+                                                        <span class="fa fa-picture-o"></span>
+                                                   </span>
+                                               </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                        <p class="subcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <span class="supportIcon">
+                                                <span class="hot">HOT</span>
+                                                <span class="fa fa-video-camera"></span>
+                                                <span class="fa fa-picture-o"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Iten new---------------------------------------------------- END-->
+                                <!--Iten new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3><a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi</a></h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Iten new---------------------------------------------------- END-->
+                                <!--Iten new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3><a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi</a></h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Iten new---------------------------------------------------- END-->
+                                <!--Iten new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3><a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi</a></h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Iten new---------------------------------------------------- END-->
+                            </div>
+                            <!--Iten new box---------------------------------------------------- END-->
+                        </div>
+                        <!--Category Box---------------------------------------------------- END-->
+                        <!--Hot new------------------------------------------------------>
+                        <div class="home_hotnew">
+                          <!--Hot new wrap------------------------------------------------------>
+                          <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                            </div>
+                            <!--Hot new wrap---------------------------------------------------- END-->
+                            <!--Hot new wrap------------------------------------------------------>
+                            <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                            </div>
+                            <!--Hot new wrap---------------------------------------------------- END-->
+                            <!--Hot new wrap------------------------------------------------------>
+                            <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box---------------------------------------------------- END-->
+                               <!--Hot news Box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news Box------------------------------------------------------>
+                            </div>
+                            <!--Hot new wrap---------------------------------------------------- END-->
+                        </div>
+                        <!--Hot new---------------------------------------------------- END-->
+                    </div>
+                    
+                    <!--styleNam------------------------------------------------------>
+                    <div class="cate styleNam">
+                        <!--Category box------------------------------------------------------>
+                        <div class="category_box">
+                            <div class="cate_header">
+                                <h2><a href="#">Tên Category</a></h2>
+                                <ul class="cate-item">
+                                    <li><a href="#">cate on</a></li>
+                                    <li><a href="#">cate on</a></li>
+                                    <li><a href="#">cate on</a></li>
+                                </ul>
+                            </div>
+                            <!--Item new box------------------------------------------------------>
+                            <div class="itemnews-box">
+                                <!--Item new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                        <p class="subcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <span class="supportIcon">
+                                                <span class="hot">HOT</span>
+                                                <span class="fa fa-video-camera"></span>
+                                                <span class="fa fa-picture-o"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Item new---------------------------------------------------- END-->
+                                <!--Item new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                        <p class="subcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <span class="supportIcon">
+                                                <span class="hot">HOT</span>
+                                                <span class="fa fa-video-camera"></span>
+                                                <span class="fa fa-picture-o"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Item new---------------------------------------------------- END-->
+                                <!--Item new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                        <p class="subcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <span class="supportIcon">
+                                                <span class="hot">HOT</span>
+                                                <span class="fa fa-video-camera"></span>
+                                                <span class="fa fa-picture-o"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Item new---------------------------------------------------- END-->
+                                <!--Item new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                        <p class="subcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <span class="supportIcon">
+                                                <span class="hot">HOT</span>
+                                                <span class="fa fa-video-camera"></span>
+                                                <span class="fa fa-picture-o"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--Item new---------------------------------------------------- END-->
+                                <!--Item new------------------------------------------------------>
+                                <div class="itemnews">
+                                    <div class="thumb">
+                                        <a href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                                <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                        <div class="shortcontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo risus. Suspendisse et enim massa. Donec feugiat eleifend blandit. Pellentesque finibus nibh ut volutpat pharetra.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Item new---------------------------------------------------- END-->
+                            </div>    
+                            <!--Item new box---------------------------------------------------- END-->                       
+                        </div>
+                        <!--Category box---------------------------------------------------- END-->
+                        <!--Hot news------------------------------------------------------>
+                        <div class="home_hotnew">
+                          <!--Hot news wrap------------------------------------------------------>
+                          <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                            </div>
+                            <!--Hot news wrap---------------------------------------------------- END-->
+                            <!--Hot news wrap------------------------------------------------------>
+                            <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                            </div>
+                            <!--Hot news wrap---------------------------------------------------- END-->
+                            <!--Hot news wrap------------------------------------------------------>
+                            <div class="hotnew_wrap">
+                              <div class="hotnew_header">
+                                  <h3>Tên Hot New</h3>
+                               </div>
+                               <!--Hot news box---------------------------------------------------- END-->
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news box---------------------------------------------------- END-->
+                               <!--Hot news box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news box---------------------------------------------------- END-->
+                               <!--Hot news box------------------------------------------------------>
+                               <div class="hotnew_box">
+                                    <a class="hotnew_img" href="#"><img src="http://img.f29.vnecdn.net/2017/04/11/7-1491881018_140x84.jpg" alt="" /></a>
+                                    <div class="text-content">
+                                        <h3>
+                                            <a href="#">10 năm lấy chồng mà 8-3, đến mùi hoa cũng chưa từng được ngửi
+                                            <span class="supportIcon">
+                                                    <span class="hot">HOT</span>
+                                                    <span class="fa fa-video-camera"></span>
+                                                    <span class="fa fa-picture-o"></span>
+                                                </span>
+                                            </a>
+                                        </h3>
+                                    </div>
+                               </div>
+                               <!--Hot news box---------------------------------------------------- END-->
+                            </div>
+                            <!--Hot news wrap---------------------------------------------------- END-->
+                        </div>
+                        <!--Hot news---------------------------------------------------- END-->
+                    </div>
+                    <!--styleNam---------------------------------------------------- END-->
+                    <!--Pagination------------------------------------------------------>
+                    <div class="pagination">
+                        <div class="showItem">1/160</div>
+                        <ul class="flex">
+                            <li class="current"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#">Cuối</a></li>
+                        </ul>
+                    </div>
+                    <!--Pagination---------------------------------------------------- END-->
+                </div>
+                <!--Left Primary---------------------------------------------------- END-->
+                <div class="rightprimary"> Những box quảng cáo </div>
+            </div>
+        </section>
+        <!--Footer------------------------------------------------------>
+        <footer>
+            <div class="footer1">
+                <span><i class=""></i><i class="fa fa-home" aria-hidden="true"></i>Đặt làm trang chủ</span> 
+                <span id="scroll-top"><i class=""></i><i class="fa fa-arrow-up" aria-hidden="true"></i>Về đầu trang</span> 
+            </div>
+            <div class="footer2 color-pink">
+                <ul class="menu-footer flex flex-space-around flex-align-center">
+                    <li><a href="#"><img src="images/icon-home-black.png" alt=""></a></li>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                    <li><a href="#">Menu 5</a></li>
+                    <li><a href="#">Menu 6</a></li>
+                    <li><a href="#">Menu 7</a></li>
+                </ul>
+            </div>
+            <div class="footer3 flex flex-space-between">
+                <div class="leftfooter">
+                    <p> Công ty Cổ Phần Truyền Thông và Giải Trí Thiên Phú
+                        <br /> Giấy phép hoạt động báo điện tử Phụ Nữ Xưa và Nay trên Internet số 378/GP - BTTTT TP.Hồ Chí Minh, ngày 12-04-2017.
+                        <br /> Tòa soạn: 19/1 Huỳnh Khương An, P5, Q.Gò Vấp
+                        <br /> Điện thoại: 08-3439-6477. Fax: 08-3439-6478
+                        <br /> Email: hotro@phunuxuavanay.vn. Website: http://www.phunuxuavanay.vn
+                        <br /> </p>
+                    <p> Mọi hành động sử dụng nội dung đăng tải trên Báo điện tử Phụ nữ xưa và nay tại địa chỉ www.phunuxuavanay.vn phải có sự đồng ý bằng văn bản của Báo điện tử Phụ nữ xưa và nay. </p>
+                </div>
+                <div class="rightfooter">
+                    <p> Liên hệ quảng cáo:
+                        <br /> Hotline: 0909.888.444
+                        <br /> Email: quangcao@phunuxuavanay.vn
+                        <br /> Hỗ trợ và CSKH: 01268 269 779 (Ms. Phượng)
+                        <br /> Các mảng: gia đình - công nghệ - game - giải trí , xã hội.
+                        <br /> </p>
+                </div>
+            </div>
+        </footer>
+        <!--Footer---------------------------------------------------- END-->
+        <script type="text/javascript" src="js/script.js"></script>
+    </article>
+</body>
+
+</html>
