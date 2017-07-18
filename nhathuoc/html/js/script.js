@@ -97,6 +97,39 @@ $(document).ready(function(){
     });
      /* Get day
     ========================================================*/
+    /* Drop item 
+    ========================================================*/
+    (function ($) {
+        var closeToggle = function() {
+            $('.drop-item.active').slideToggle();
+            $('.drop-item').removeClass('active');
+        }
+
+        $('.drop-item').on('click', function(e) {
+           e.stopPropagation();
+        });
+
+        $('.drop-wrap .drop-menu').on('click', function(e) {
+            e.stopPropagation();
+            var $menu = $(this).closest('.drop-wrap');
+            var $ulMenu = $menu.find('.drop-item');
+            var $classActive = $ulMenu.attr('class');
+
+            //close menu open
+            closeToggle();
+            if($classActive.search('active') == -1) {
+                // active slider toggle
+                $ulMenu.addClass('active');
+                $ulMenu.slideToggle();
+                $flagActive  = $htmlThis;
+            } 
+
+        });
+
+//        $("body").on("click", function() {
+//            closeToggle();
+//        });   
+    })(jQuery);
 });
 
 

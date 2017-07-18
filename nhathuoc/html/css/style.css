@@ -60,6 +60,7 @@ div:after{
 .bottom-header{
     width: 100%;
     height: 75px;
+    position: relative;
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
     padding: 10px 10px 0 30px;
 }
@@ -786,13 +787,569 @@ footer li a{
     padding: 0 4px;
     border-right: 1px solid #000;
 }
+/******************** Category Page ********************/
+.detail-menu{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 2
+}
+.button {
+    width: 17px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+}
+.button:after {
+    position: absolute;
+    display: block;
+    top: 10px;
+    height: 3px;
+    width: 17px;
+    border-top: 2px solid #4ac6e2;;
+    border-bottom: 2px solid #4ac6e2;;
+    content: ''
+}
+.button:before {
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 17px;
+    top: 5px;
+    background: #4ac6e2;;
+    content: '';
+}
+/*
+.button.menu-opened{
+    background: #ec008c;
+}
+*/
+.button.menu-opened:after {
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+    top: 10px;
+    left: 4px;
+    border: 0;
+    height: 3px;
+    width: 22px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.button.menu-opened:before {
+    top: 10px;
+    left: 4px;
+    background: #fff;
+    width: 22px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+.banner.detail{
+    margin: 0;
+    padding: 0;
+}
+.bread-crumb{
+    width: 100%;
+    background: #e6e6e6;
+    padding: 7px 15px 5px;
+    position: relative;
+}
+.bread-crumb .button{
+    margin-right: 15px;
+}
+.bread-crumb > ul li a{
+    font-size: 12px;
+    color: #000;
+    margin-right: 5px;
+}
+.bread-crumb > ul li:not(:last-child) a:after{
+    content: '/';
+    display: inline-block;
+    margin-left: 5px;
+}
+.bread-crumb > ul li.active a{
+    text-decoration: underline;
+}
 /******************** Category Detail Page ********************/
 
-/******************** Bread crumb ********************/
+/******************** Right ********************/
+.right .home-cate-header{
+    margin-bottom: 30px;
+}
+.right .home-cate-header h2{
+    width: 300px;
+}
 
+.right .home-cate-header > p{
+    display: inline-block;
+    width: 300px;
+}
+.right .home-cate-header.bottom{
+    border: solid 1px #ececec;
+    padding: 10px 15px 8px;
+    background: rgba(180, 180, 180, 0.19);
+}
+.right .home-cate-header.bottom p:first-child{
+    width: 585px;
+}
+/******************** Fillter ********************/
+.fillter{
+    width: 100%;
+    background-color:  #edeaea;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
+}
+.fillter-box{
+    background: #25c3eb;
+    padding: 15px 20px 25px;
+    border-bottom: 4px solid #4b4b4b;
+}
+.fillter-box h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.fillter-box > div{
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: 1px solid #58d8f9;
+}
+.fillter-box p{
+    color: #fff;
+    line-height: 1.7em;
+    font-size: 12px;
+}
+.fillter-box p > span{
+    width: calc(100% - 14px);
+    display: inline-block;
+}
+.fillter-box p > i.fa-trash-o{
+    cursor: pointer;
+    
+}
+.fillter-select{
+    padding: 15px 10px;
+}
+.fillter-select h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b4b4b4;
+}
+.fillter-select-wrapt > div{
+    margin-bottom: 10px;
+}
+
+.fillter-select input[type="checkbox"]:not(:checked),
+.fillter-select input[type="checkbox"]:checked{
+    position: absolute;
+    left: -99999;
+}
+.fillter-select input[type="checkbox"]:not(:checked) + label,
+.fillter-select input[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.fillter-select input[type="checkbox"]:not(:checked) + label:before,
+.fillter-select input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 13px; 
+    height: 13px; 
+    border: 2px solid #ccc;
+    background: #fff;
+/*  border-radius: 4px;*/
+/*  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);*/
+}
+.fillter-select input[type="checkbox"]:checked + label:before{
+    border: 2px solid #25c3eb;
+}
+.fillter-select input[type="checkbox"]:not(:checked) + label:after,
+.fillter-select input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: .1em; 
+    left: .1em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #25c3eb;
+    transition: all .2s;
+}
+.fillter-select input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.fillter-select input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
 /******************** Pagination ********************/
+.pagination-info{
+    color: #818181;
+    font-size: 18px;
+    font-weight: 400;
+}
+.pagination-info span{
+    color: #25c3eb;
+    font-weight: 700;
+}
+.pagination-style{
+    background: #7acade;
+    border: 3px solid #fff;
+    padding: 2px 5px;
+}
+.pagination-style a{
+    width: 10px;
+    height: 18px;
+    background: url(../images/arrow-02.png) no-repeat;
+    background-size: contain;
+}
+.pagination-style a.next{
+    transform: rotate(180deg);
+}
+.pagination-style select{
+    width: 35px;
+    height: 22px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+/******************** Tra cuu don hang ********************/
+.tracuu-warp{
+    background: #e9e9e9;
+}
+.tracuu-warp input,
+.tracuu-warp select{
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #e2e2e2;
+}
+.tracuu-warp input[type=checkbox],
+.tracuu-warp input[type=radio]{
+    height: auto;
+}
+.tracuudh{
+    width: 725px;
+    margin: 10px auto 0;
+}
+.logo-tracuu{
+    text-align: center;
+}
+.tracuu-content{
+    position: relative;
+    background: #fff;
+    padding: 25px 20px 20px;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.29);
+}
+.tracuu-content h3{
+    color: #00aef0;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.tracuu-content h4{
+    color: #acacac;
+}
+.tracuu-content h5{
+    font-size: 14px;
+    color: #25c3eb;
+    
+}
+.tracuu-content h5 span{
+    font-size: 12px;
+    color: #000;
+    display: block;
+    text-decoration: line-through;
+}
+.tracuu-content p{
+    color: #707070;
+    font-size: 14px;
+}
+.close{
+    width: 28px;
+    height: 28px;
+    display: block;
+    border: solid 3px #00bff3;
+    color: #00bff3;
+    text-align: center;
+    position: absolute;
+    font-size: 24px;
+    padding-top: 3px;
+    top: 10px;
+    right: 15px;
+}
+.tracuudh .back{
+    color: #000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.tracuu-input{
+    width: 365px;
+    margin: 20px auto 30px;
+}
+.tracuu-input input{
+    width: 235px;
+}
+p.tracuu-info{
+    display: block;
+    padding: 10px 15px;
+    background: #ffffae;
+    color: #000;
+    border: 1px solid #e2e2e2;
+}
+p.note{
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    border: 1px #e2e2e2 solid;
+    background-color:  #ffffff;
+}
+.tracuu-result{
+    margin: 10px 0 15px;
+    padding: 20px 10px;
+    border-radius: 4px;
+    border: solid 3px  #f7f5f5;
+}
+.tracuu-result h4{
+    margin-bottom: 25px;
+}
+.tracuu-result .tracuu-sp:not(:first-child){
+    border-top: 1px solid #ededed;
+    padding-top: 20px;
+}
+.tracuu-result .tracuu-sp:not(:first-child) h4{
+    display: none;
+}
+.tracuu-sp > div{
+    width: 30%;
+}
 
-/******************** Detail Page ********************/
+.tracuu-sp > div:last-child{
+    width: 10%
+}
+.tracuu-sp figure{
+    margin-top: -5px;
+}
+.tracuu-sp > div:first-child{
+    width: 56%;
+}
+.tracuu-sp > div:first-child h5{
+    width: calc(100% - 100px);
+    font-size: 14px;
+    color: #000;
+}
+.tracuu-sp > div > div{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.tracuu-sp select{
+    width: 75px;
+    height: 35px;
+    padding-left: 10px;
+    color: #25c3eb;
+    border: 1px solid #25c3eb;
+    border-radius: 4px;
+}
+.tracuu-sp .trash{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.tracuu-sp .trash i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+.tracuu-thanhtien{
+    margin: 10px -5px;
+    padding: 10px 0px 15px;
+    background: #f7f5f5;
+    position: relative;
+    text-align: right;
+}
+.tracuu-thanhtien:before,
+.tracuu-thanhtien:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ededed;
+}
+.tracuu-thanhtien:before{
+    top: -5px;
+}
+.tracuu-thanhtien:after{
+    bottom: -5px;
+}
+.tracuu-thanhtien p,
+.total-price >div:last-child p{
+    display: block;
+    margin-right: 15px;
+    text-align: right;
+}
+.tracuu-thanhtien p span,
+.total-price >div:last-child p span{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+.tracuu-thanhtien .phi-tong,
+.total-price >div:last-child .phi-tong{
+    color: #ee1c24;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.info-customer{
+    margin-top: 20px;
+}
+.info-customer h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.info-customer p{
+    line-height: 1.8em;
+}
+.info-customer p span{
+    width: 41%;
+    display: inline-block;
+}
+p.cod{
+    color: #cbab0f;
+    margin-top: 5px;
+}
+/******************** Giỏ hàng ********************/
+.giohang{
+    
+}
+.giohang form > h3{
+    margin-bottom: 5px;
+}
+.giohang form > h3 > span{
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.giohang form > h3 > span > input{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.giohang .tracuu-result{
+    padding: 20px 10px 5px;
+}
+.giohang .tracuu-thanhtien{
+    background: #fff;
+    padding: 5px 0px 0;
+}
+.giohang .tracuu-thanhtien:after{
+    content: none;
+}
+.giohang .tracuu-thanhtien .phi-tong{
+    font-size: 14px;
+    color: #000;
+}
+.giohang .tracuu-thanhtien .phi-tong span{
+    color: #ee1c24;
+    width: calc(100% - 110px);
+}
+.wrapt-box-input{
+    background: #f7f5f5;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+.input-single input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input-double select{
+    width: 315px;
+    margin-bottom: 15px;
+}
+.input-double span{
+    font-size: 14px;
+    vertical-align: middle;
+    width: 315px;
+    margin-bottom: 15px;
+}
+.input-double span > input{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.input-triple input{
+    width: 205px;
+}
+.total-price{
+    margin-bottom: 30px;
+}
+.total-price >div:first-child{
+    width: 55%;
+}
+.total-price >div:first-child > p{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+p.call-sp{
+    color: #464646;
+}
+p.call-sp span{
+    color: #ee1c24;
+}
+/******************** Ads ********************/
+.btn-submit{
+    width: 118px;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 8px;
+    border: solid 2px #67d0ef;
+    color: #67d0ef;
+}
+.dat-hang{
+    width: 430px;
+    height: 66px;
+    background: url(../images/btn-dathang.png) no-repeat;
+}
 .ads-content{
     padding: 20px;
 }
+/******************** Drop show item ********************/
+.drop-menu{
+    cursor: pointer;
+}
+.drop-item{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
