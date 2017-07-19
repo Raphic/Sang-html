@@ -95,6 +95,22 @@ $(document).ready(function(){
         paginationClickable: true,
         spaceBetween: 15
     });
+    
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 5,
+        loop:true,
+        loopedSlides: 5,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 5,
+        slidesPerView: 5,
+        touchRatio: 0.2,
+        loop:true,
+        loopedSlides: 5,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
      /* Get day
     ========================================================*/
     /* Drop item 
