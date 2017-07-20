@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.wrapt-item-01:hover,
+.wrapt-item-02:hover{
+    cursor: pointer;
+}
+.wrapt-item-01:hover .item-content h4{
+    font-weight: 700;
+    
+}
+.wrapt-item-01:hover .item-content h5 a,
+.wrapt-item-02:hover .item-content h5 a{
+    color: #ec1848;
+}
+.wrapt-item-01:hover .item-content h5 span,
+.wrapt-item-02:hover .item-content h5 span{
+    color: #000;
+}
+
+.wrapt-item-02:hover .item-content h4{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.menu-sub ul li a:hover{
+    color: #000;
+}
+
