@@ -89,6 +89,7 @@
     bottom: 0;
 }
 */
+.home_slide .text-content h1,
 .home_slide .text-content h3{
     font-size: 20px;
     color: #000;
@@ -252,6 +253,7 @@
     margin: 5px 0;
     font-size: 13px;
 }
+.text-content h1 a,
 .text-content h3 a{
     color:  #43403e;
     font-weight: 700;
