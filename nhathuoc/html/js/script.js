@@ -118,6 +118,15 @@ $(document).ready(function(){
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
+    
+    var swiper = new Swiper('.home_slide', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: true
+    });  
      /* Get day
     ========================================================*/
     /* Drop item 
