@@ -44,9 +44,12 @@ input, select{
     padding-left: 10px;
 }
 /*============================ Home ============================*/
-.wrapt{
+.box-1280{
     width: 1280px;
     margin: auto;
+}
+.wrapt{
+
 }
 /******************** Top Page ********************/
 .top-header{
@@ -256,14 +259,10 @@ input, select{
     padding: 15px 10px 10px;
     background: #eaeaea;
 }
-.chung-nhan > div:nth-child(2){
-    background: #3ec8eb;
-}
-.chung-nhan > div:nth-child(2) > h2{
-    color: #fff;
-}
 .chung-nhan > div > figure{
     margin-right: 20px;
+    width: 65px;
+    height: 58px;
 }
 .chung-nhan > div > h2{
     font-size: 18px;
@@ -277,6 +276,37 @@ input, select{
     font-size: 12px;
     font-weight: 400;
     margin-top: 10px;
+}
+.chung-nhan > div:hover{
+    background: #3ec8eb;
+}
+.chung-nhan > div:hover h2{
+    color: #fff;
+}
+.chung-nhan > div:nth-child(1) figure{
+    background: url(../images/icon/icon-chinhhang.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(2) figure{
+    background: url(../images/icon/icon-giahoply.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(3) figure{
+    background: url(../images/icon/icon-antoantc.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(4) figure{
+    background: url(../images/icon/icon-tuvan.png) no-repeat center center;
+}
+
+.chung-nhan > div:nth-child(1):hover figure{
+    background: url(../images/icon/icon-chinhhang-hover.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(2):hover figure{
+    background: url(../images/icon/icon-giahoply-hover.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(3):hover figure{
+    background: url(../images/icon/icon-antoantc-hover.png) no-repeat center center;
+}
+.chung-nhan > div:nth-child(4):hover figure{
+    background: url(../images/icon/icon-tuvan-hover.png) no-repeat center center;
 }
 /******************** RIght primary ********************/
 
@@ -456,13 +486,21 @@ input, select{
 /******************** Tabs San pham ********************/
 .tabs-sp {
     margin-top: 20px;
+    position: relative;
 }
-.tabs-sp > div {
-    height: 0;
-    overflow: hidden;
-    background: #efeded;
+.tabs-sp:before{
+    content: '';
+    background: #efeded; 
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 54px);
+    margin-top: 54px;
 }
 .tabs-sp > div > div{
+    height: 0;
+    overflow: hidden;
+}
+.tabs-sp > div > div > div{
     padding: 30px 15px;
 }
 .tabs-sp input {
@@ -701,6 +739,8 @@ input, select{
 }
 .home-cate-main{
     padding: 20px 0;
+    width: 1280px;
+    margin: auto;
 }
 .home-cate-main .left{
     width: 253px;
@@ -753,7 +793,7 @@ footer li a{
     border-top: 10px solid #7acade;
     border-bottom: 2px solid #e6e6e6;
 }
-.footer-content > div{
+.footer-content > div > div{
     width: 25%;
 }
 .footer-content h3{
@@ -766,13 +806,13 @@ footer li a{
 .footer-bottom{
     padding: 15px 20px 10px;
 }
-.footer-bottom > div:first-child{
+.footer-bottom > div > div:first-child{
     width: 330px;
 }
-.footer-bottom > div:nth-child(2){
+.footer-bottom > div > div:nth-child(2){
     width: 40%;
 }
-.footer-bottom > div:last-child{
+.footer-bottom > div > div:last-child{
     width: 25%;
 }
 .footer-bottom h3.dangky{
@@ -849,7 +889,7 @@ footer li a{
 /******************** Category Page ********************/
 .detail-menu{
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 0;
     z-index: 2
 }
@@ -917,26 +957,30 @@ footer li a{
     margin: 0;
     padding: 0;
 }
+
 .bread-crumb{
     width: 100%;
     background: #e6e6e6;
     padding: 7px 15px 5px;
     position: relative;
 }
+.bread-crumb > div{
+    position: relative;
+}
 .bread-crumb .button{
     margin-right: 15px;
 }
-.bread-crumb > ul li a{
+.bread-crumb ul li a{
     font-size: 12px;
     color: #000;
     margin-right: 5px;
 }
-.bread-crumb > ul li:not(:last-child) a:after{
+.bread-crumb ul li:not(:last-child) a:after{
     content: '/';
     display: inline-block;
     margin-left: 5px;
 }
-.bread-crumb > ul li.active a{
+.bread-crumb ul li.active a{
     text-decoration: underline;
 }
 /******************** Detail Page ********************/
@@ -1032,12 +1076,24 @@ footer li a{
 }
 .item-center select{
     border: none;
-    background: #f7f6f6;
     color: #000;
+    background: transparent;
+    padding-right: 5px;
     font-size: 14px;
     margin-left: -3px;
     font-weight: 700;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relativer;
+/*    outline:none;*/
 }
+.select-style{
+    display: inline-block;
+    background: url(../images/icon/icon-select.png) no-repeat center right;
+}
+
 .center-add{
     padding-left: 12px;
     margin: 5px 0 15px;
@@ -1053,7 +1109,7 @@ footer li a{
     display: inline-block;
     position: absolute;
     left: -10px;
-    top: 9px;
+    top: 8px;
 }
 .center-add .see-map{
     color: #007eff;
@@ -1138,8 +1194,17 @@ footer li a{
     font-weight: 400;
     padding: 15px 25px;
 }
+.detail-table .bottom > div:last-child{
+    text-align: center;
+}
 .detail-table .bottom > div .btn-muangay{
-    width: 100%;
+    width: 269px;
+    height: 40px;
+}
+.thanhtoan-blue{
+    color: #0076a3;
+    font-weight: 400;
+    margin-top: 15px;
 }
 .detail-table .bottom > div:first-child{
     border-right: solid 1px #e9e8e8;
@@ -1153,11 +1218,19 @@ footer li a{
 .detail-table .bottom > div:first-child p:first-child{
     
 }
+.detail-table .bottom > div:first-child p:first-child span:last-child{
+    color: #818181;
+    text-decoration: line-through;
+}
 .detail-table .bottom > div:first-child h5{
     color: #ee1c24;
     font-size: 18px;
     font-weight: 700;
     margin: 10px 0;
+}
+.detail-table .bottom > div:first-child h5 span{
+    width: 170px;
+    display: inline-block;
 }
 .detail-table .bottom > div:first-child p:last-child{
     color: #42c5e4;
