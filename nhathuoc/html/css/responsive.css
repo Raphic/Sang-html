@@ -173,6 +173,7 @@
 }
 /*============================ End Menu Mobile ============================*/
 @media screen and (max-width:768px){
+    /*============= Home =============*/
     body{
         background: #fff;
     }
@@ -183,7 +184,12 @@
     
     .box-1280,
     .logo,
-    .search-top{
+    .search-top,
+    .basket-page,
+    .banner-slider,
+    .chung-nhan,
+    .home-cate-main .right,
+    .home-cate-main{
         width: 100%;
     }
     
@@ -199,33 +205,190 @@
     }
     .main-menu,
     .sp-daxem,
-    .sologan{
+    .sologan,
+    .ads-top,
+    .ads-content,
+    .ads-left,
+    .home-cate-main .left,
+    .menu-footer{
         display: none;
     }
-}
-@media screen and (max-width:736px){
-    .home_slide .swiper-pagination {
-        top: 78%;
+    .bottom-header{
+        padding: 15px;
+        text-align: center;
     }
-    .home_slide .text-content{
-        border-left: 2px solid #f55197;
+    .basket-page{
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .contact-top{
+        margin-left: 15px;
+    }
+    .chung-nhan{
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+   
+    }
+    .chung-nhan > div{
+        width: 48%;
+        margin: 0.5% 1%;
+    }
+    .partner{
+        width: 95%;
+        height: auto;
+        margin: 30px auto 20px;
+        padding: 5px 50px 10px;
+    }
+    .wrapt-item-02{
+        width: 29%;
+        margin: 3% 2%;
+    }
+    .home-cate-header{
+        margin-top: 15px;
+    }
+    .footer-content .box-1280{
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .footer-content > div > div{
+        width: 49%;
+    }
+    .footer-bottom,
+    .copyright{
+        text-align: center;
+    }
+    .footer-bottom > div > div:first-child,
+    .footer-bottom > div > div:nth-child(2),
+    .footer-bottom > div > div:last-child{
+        width: 100%;
+    }
+    .footer-bottom > div > div:last-child > ul,
+    .footer-call,
+    .copyright  ul {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    /*============= End Home =============*/
+    /*============= Detail =============*/
+    .detail-item-box{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .item-center,
+    .detail-item-info .left,
+    .form-danhgia .comment_bottom{
+        width: 100%;
+    }
+    .detail-item-info .right{
+        display: none;
+    }
+    .item-img{
+        width: 355px;
+    }
+    .item-info{
+        width: calc(100% - 370px)
+    }
+    
+    .item-center >div{
+        height: inherit;
+    }
+    .tabs-slider-detail .wrapt-item-02{
+        width: 65%;
+    }
+    .detail-item-title h1{
+        line-height: 30px;
+    }
+    .form-danhgia .input-triple input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .detail-table .bottom > div:first-child p span,
+    .detail-table .bottom > div:first-child h5 span{
+        width: 135px;
+    }
+    /*============= End Detail =============*/
+}
+@media screen and (max-width:650px){
+    .item-img,
+    .item-info,
+    .detail-table .bottom > div .btn-muangay{
+        width: 100%;
+    }
+    .btn-danhgia{
+        height: auto;
+        padding: 3px 2px;
     }
 }
+
 @media screen and (max-width:609px){
-    /************************ Other video ************************/
- 
+    /*============= Home =============*/
+    .wrapt-item-02{
+        width: 46%;
+    }
+    .item-content h4{
+        height: 55px;
+    }
+    .copyright ul{
+        margin-top: 5px;
+    }
+    /*============= End Home =============*/
 }
-@media screen and (max-width:568px){
-    
-}
+
 @media screen and (max-width:480px){
-    
+    /*============= Home =============*/
+    .top-header ul{
+        width: 100%;
+    }
+    .top-header ul li:nth-child(2),
+    .top-header ul li:nth-child(3){
+        display: none;
+    }
+    .chung-nhan > div{
+        width: 100%;
+    }
+    .home-cate-header h1{
+        line-height: 20px;
+    }
+    .home-cate-header button{
+        width: 200px;
+    }
+    .partner{
+        padding: 5px 20px 10px;
+    }
+    .footer-about figure,
+    .footer-content h3{
+        margin-bottom: 0;
+    }
+    .footer-content{
+        text-align: center;
+    }
+    .footer-content > div > div{
+        width: 100%;
+    }
+    /*============= End Home =============*/
+    /*============= Detail =============*/
+    .btn-muangay p{
+        font-size: 18px;
+    }
+    .detail-table-info > div > p:first-child{
+        width: 140px;
+    }
+    /*============= End Detail =============*/
 }
 @media screen and (max-width:412px){
-  
+    .detail-table .bottom > div{
+        padding: 10px 15px;
+    }
 }
 @media screen and (max-width:360px){
-    
+    .swiper-slide figure, .swiper-slide figure img{
+        width: auto;
+    }
 }
 @media screen and (max-width:320px){
   

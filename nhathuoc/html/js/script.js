@@ -77,7 +77,22 @@ $(document).ready(function(){
         slidesPerView: 4,
         slidesPerColumn: 2,
         paginationClickable: true,
-        spaceBetween: 15
+        spaceBetween: 15,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+                spaceBetween: 20
+            }
+        }
     });
     var swiper = new Swiper('.tabs-slider-02 .swiper-container', {
         nextButton: '.swiper-button-next',
@@ -85,7 +100,22 @@ $(document).ready(function(){
         slidesPerView: 4,
         slidesPerColumn: 2,
         paginationClickable: true,
-        spaceBetween: 15
+        spaceBetween: 15,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+                spaceBetween: 20
+            }
+        }
     });
     var swiper = new Swiper('.tabs-slider-03 .swiper-container', {
         nextButton: '.swiper-button-next',
@@ -93,14 +123,47 @@ $(document).ready(function(){
         slidesPerView: 4,
         slidesPerColumn: 2,
         paginationClickable: true,
-        spaceBetween: 15
+        spaceBetween: 15,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+                spaceBetween: 20
+            }
+        }
     });
     var swiper = new Swiper('.tabs-slider-detail .swiper-container', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slidesPerView: 4,
         paginationClickable: true,
-        spaceBetween: 15
+        spaceBetween: 15,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+            },
+            600: {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+            }
+            ,
+            360: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+            }
+        }
     });
     
     var galleryTop = new Swiper('.gallery-top', {

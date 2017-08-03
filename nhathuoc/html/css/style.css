@@ -182,6 +182,7 @@ input, select{
 }
 .menu-sub{
     width: 100%;
+    min-height: 100%;
     position: absolute;
     background: #fff;
     z-index: 2;
@@ -599,6 +600,7 @@ input, select{
 .item-content h4{
     font-size: 14px;
     font-weight: 400;
+    margin-top: 5px;
     line-height: 1.3em;
     position: relative;
     z-index: 1;
@@ -1268,18 +1270,18 @@ footer li a{
     margin-right: 20px;
     position: relative;
 }
-.detail-item-danhgia h3:before{
+.detail-item-danhgia .btn-danhgia{
+    margin-right: 10px;
+}
+.detail-item-danhgia .btn-danhgia:before{
     content: '';
     width: 1px;
-    height: 25px;
+    height: 100%;
     position: absolute;
     background: #4ac6e2;
     display: block;
-    right: -10px;
-    top: -4px;
-}
-.detail-item-danhgia .btn-danhgia{
-    margin-right: 10px;
+    left: -10px;
+    top: 0;
 }
 .form-danhgia{
     margin-bottom: 40px;
@@ -1844,6 +1846,7 @@ p.call-sp span{
     width: 165px;
     height: 25px;
     color: #fff;
+    position: relative;
 }
 .btn-cancel{
     border-radius: 8px;
