@@ -14,6 +14,7 @@
 }
 .rd-mobilemenu.active {
   right: 0;
+  background: rgba(0,0,0,0.5);
 }
 
 .rd-mobilemenu_ul {
@@ -24,7 +25,7 @@
   width: 240px;
   padding: 132px 0 76px;
   color: #FFF;
-  background: #055e68;
+  background: #7acade;
   font-size: 14px;
   line-height: 20px;
   overflow: auto;
@@ -54,15 +55,16 @@
 }
 .rd-mobilemenu_ul li.active a {
   background: #FFF;
-  color: #055e68;
+  color: #7acade;
 }
 .rd-mobilemenu_ul a {
   display: block;
-  padding: 14px 25px 16px;
+  padding: 10px 25px;
+  color: #fff;
 }
 .rd-mobilemenu_ul a:hover {
   background: #FFF;
-  color: #055e68;
+  color: #42c5e4;
 }
 .rd-mobilemenu_ul a .rd-submenu-toggle {
   position: absolute;
@@ -88,7 +90,7 @@
   content: '\f078';
 }
 .rd-mobilemenu_ul a .rd-submenu-toggle:hover {
-  background: #055e68;
+  background: #7acade;
   color: #FFF;
 }
 .rd-mobilemenu_ul a.rd-with-ul {
@@ -105,7 +107,13 @@
   padding-left: 40px;
 }
 .rd-mobilemenu_ul ul ul a {
-  padding-left: 60px;
+/*  padding-left: 60px;*/
+    padding: 5px;
+    margin: auto 40px;
+    border-bottom: 1px dotted #fff;
+}
+.rd-mobilemenu_ul ul ul li:last-child a{
+    border-bottom:none;
 }
 .rd-mobilemenu_ul:after {
   content: '';
@@ -120,7 +128,7 @@
   left: 0;
   right: 0;
   height: 56px;
-  background: #055e68;
+  background: #7acade;
   color: #FFF;
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);

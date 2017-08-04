@@ -564,18 +564,22 @@ input, select{
     height: auto;
 }
 @media screen and (max-width: 650px) {
+/*
     label {
         font-size: 0;
     }
+*/
     label:before {
         margin: 0;
         font-size: 18px;
     }
 }
 @media screen and (max-width: 400px) {
+/*
     label {
         padding: 15px;
     }
+*/
 }
 /******************** Item ********************/
 .wrapt-item-01{
@@ -999,16 +1003,19 @@ footer li a{
     font-size: 30px;
     font-weight: 400;
 }
-.detail-item-title h1 > span{
+.detail-item-title h1 a{
+    display: inline-block;
+}
+.detail-item-title h1 span{
     font-size: 14px;
     vertical-align: middle;
     margin-left: 15px;
 }
-.detail-item-title h1 > span > span{
+.detail-item-title h1  span > span{
     margin-left: 5px;
     color: #288ad6;
 }
-.detail-item-title h1 > span i.fa{
+.detail-item-title h1 span i.fa{
     margin: 0;
 }
 
@@ -1286,15 +1293,15 @@ footer li a{
 .form-danhgia{
     margin-bottom: 40px;
 }
-.form-danhgia h5{
+.star-danhgia{
     font-size: 14px;
     margin-bottom: 10px;
 }
-.form-danhgia h5 > span{
+.star-danhgia > span{
     font-size: 20px;
     margin-left: 20px;
 }
-.form-danhgia h5 > span > span{
+.star-danhgia > span > span{
     background: #52b858;
     font-size: 12px;
     font-weight: 300;
@@ -1304,8 +1311,9 @@ footer li a{
     border-radius: 3px;
     position: relative;
     vertical-align: top;
+    display: none;
 }
-.form-danhgia h5 > span > span:before{
+.star-danhgia > span > span:before{
     content: '';
     width: 0;
 	height: 0;
@@ -1317,6 +1325,10 @@ footer li a{
     border-bottom: 7px solid #52b858;
     transform: rotate(-90deg);
 }
+.star-danhgia .recom-star i.fa:hover{
+    color: #ff9727;
+}
+
 .form-danhgia .input-triple input{
     border: 1px #e2e2e2 solid;
     background: #f2f4f3;
@@ -1423,7 +1435,7 @@ footer li a{
     text-align: center;
     
 }
-.fillter-box > div{
+.fillter-box > div:not(.drop-item){
     margin-top: 15px;
     padding: 5px 10px;
     border: 1px solid #58d8f9;
@@ -1444,12 +1456,22 @@ footer li a{
 .fillter-select{
     padding: 15px 10px;
 }
-.fillter-select h3{
-    font-size: 14px;
-    font-weight: 500;
+.fillter-select-title{
     margin-bottom: 10px;
     border-bottom: 1px solid #b4b4b4;
 }
+.fillter-select-title h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.fillter-select-title .drop-menu{
+    display: none;
+}
+.fillter-select-wrapt.drop-item{
+    display: block;
+}
+
 .fillter-select-wrapt > div{
     margin-bottom: 10px;
 }
@@ -1458,6 +1480,7 @@ footer li a{
 .fillter-select input[type="checkbox"]:checked{
     position: absolute;
     z-index: -9999;
+    left: 99999px;
 }
 .fillter-select input[type="checkbox"]:not(:checked) + label,
 .fillter-select input[type="checkbox"]:checked + label {
@@ -2012,9 +2035,51 @@ p.call-sp span{
     margin-top: 10px;
     margin-left: 100px;
 }
-@import "../css/responsive.css";
 
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
 
+/* Idle State of the stars */
+#stars li{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+#stars li[data-value='1']:hover ~ span.khongThich{
+    display: inline-block;
+}
+#stars li[data-value='2']:hover ~ span.tamDuoc{
+    display: inline-block;
+}
+#stars li[data-value='3']:hover ~ span.binhThuong{
+    display: inline-block;
+}
+#stars li[data-value='4']:hover ~ span.ratTot{
+    display: inline-block;
+}
+#stars li[data-value='5']:hover ~ span.tuyetVoi{
+    display: inline-block;
+}
+#stars li.star > i.fa {
+  color:#ccc; 
+}
+#stars li.star.hover > i.fa {
+  color:#ff9727;
+}
+#stars li.star.selected > i.fa {
+  color:#ff9727;
+}
 
 
 

@@ -81,14 +81,14 @@
                         <li><a href="#">Thuốc bổ và điều trị gan</a></li>
                     </ul>
                     <div class="detail-menu drop-item">                
-                        <nav class="main-menu bg-01">
-                            <ul>
+                        <nav class="main-menu nav bg-01">
+                            <ul data-type="navbar">
                                 <li><a href="#">Sức khỏe người già</a></li>
                                 <li><a class="current" href="#">Sức khỏe trẻ em</a></li>
                                 <li><a href="#">Thuốc bổ & Điề trị gan</a></li>
                                 <li>
                                     <a href="#">Thuốc bổ & Điề trị Gout</a>
-                                    <nav class="menu-sub">
+                                    <ul class="menu-sub">
                                         <ul>
                                             <li><a href="#">Bánh kẹo - Đồ ăn vặt - Giải khát</a></li>
                                             <li><a href="#">Bánh kẹo</a></li>
@@ -115,7 +115,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                    </nav>
+                                    </ul>
                                 </li>
                                 <li><a href="#">Thuốc bổ & Điề trị mắt</a></li>
                                 <li><a href="#">Xương khớp & Gout</a></li>
@@ -138,15 +138,17 @@
                 <div class="box-1280">
                     <!--Detail item title------------------------------------------------------>
                     <div class="detail-item-title flex flex-space-between flex-align-center">
-                        <h1>Metic glucotin - Giảm triệu chứng đau khớp 
-                           <span class="recom-star">
-                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <span class="color-gay1">821 đánh giá</span>
-                            </span>
+                        <h1 class="click-href">Metic glucotin - Giảm triệu chứng đau khớp 
+                            <a href="#danhgia">
+                                <span class="recom-star">
+                                    <i class="fa fa-star actvie" aria-hidden="true"></i>
+                                    <i class="fa fa-star actvie" aria-hidden="true"></i>
+                                    <i class="fa fa-star actvie" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span class="color-gay1">821 đánh giá</span>
+                                </span>
+                            </a>
                         </h1>
                         <div class="detail-share">
                             <a href="#">
@@ -443,25 +445,42 @@
                                         </div>
                                     </div>
                                     <!--Show comment---------------------------------------------------- END-->
-                                    <!--Detail item đánh giá------------------------------------------------------>
-                                    <div class="detail-item-danhgia flex flex-align-center">
-                                        <h3>875 Đánh giá Metic glucotin - Giảm triệu chứng đau khớp</h3>
-                                        <button class="btn-danhgia">Gửi đánh giá của bạn</button>
-                                        <button class="btn-cancel">Hủy</button>
-                                    </div>
-                                    <!--Detail item đánh giá---------------------------------------------------- END-->
-                                    <!--Form đánh giá------------------------------------------------------>
-                                    <div class="form-danhgia">
-                                        <h5>Chọn vào ngôi sao
-                                            <span class="recom-star">
-                                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                                <i class="fa fa-star actvie" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                                <span class="rate">Rất tốt</span>
+                                    <div class="drop-wrap">
+                                        <!--Detail item đánh giá------------------------------------------------------>
+                                        <div class="detail-item-danhgia flex flex-align-center">
+                                            <h3>875 Đánh giá Metic glucotin - Giảm triệu chứng đau khớp</h3>
+                                            <button class="btn-danhgia drop-menu">Gửi đánh giá của bạn</button>
+                                            <button class="btn-cancel drop-item">Hủy</button>
+                                        </div>
+                                        <!--Detail item đánh giá---------------------------------------------------- END-->
+                                        <h5 class="star-danhgia drop-item">Chọn vào ngôi sao
+                                            <span id='stars' class="recom-star">
+                                                <li class='star' title='Poor' data-value='1'> 
+                                                    <i class='fa fa-star fa-fw'></i> 
+                                                </li>
+                                                <li class='star' title='Fair' data-value='2'> 
+                                                    <i class='fa fa-star fa-fw'></i> 
+                                                </li>
+                                                <li class='star' title='Good' data-value='3'> 
+                                                    <i class='fa fa-star fa-fw'></i> 
+                                                </li>
+                                                <li class='star' title='Excellent' data-value='4'> 
+                                                    <i class='fa fa-star fa-fw'></i> 
+                                                </li>
+                                                <li class='star' title='WOW!!!' data-value='5'> 
+                                                    <i class='fa fa-star fa-fw'></i> 
+                                                </li>
+                                                <span class="rate khongThich">Không thích</span>
+                                                <span class="rate tamDuoc">Tạm Được</span>
+                                                <span class="rate binhThuong">Bình Thường</span>
+                                                <span class="rate ratTot">Rất tốt</span>
+                                                <span class="rate tuyetVoi">Tuyệt vời quá</span>
                                             </span>
                                         </h5>
+                                    </div>
+                                        
+                                    <!--Form đánh giá------------------------------------------------------>
+                                    <div class="form-danhgia">
                                         <form>
                                             <div class="input-triple">
                                                 <input type="text" title="Họ Tên" placeholder="Họ Tên" required>

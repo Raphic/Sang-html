@@ -81,14 +81,14 @@
                         <li><a href="#">Thuốc bổ và điều trị gan</a></li>
                     </ul>
                     <div class="detail-menu drop-item">                
-                        <nav class="main-menu bg-01">
-                            <ul>
+                        <nav class="main-menu nav bg-01">
+                            <ul data-type="navbar">
                                 <li><a href="#">Sức khỏe người già</a></li>
                                 <li><a class="current" href="#">Sức khỏe trẻ em</a></li>
                                 <li><a href="#">Thuốc bổ & Điề trị gan</a></li>
                                 <li>
                                     <a href="#">Thuốc bổ & Điề trị Gout</a>
-                                    <nav class="menu-sub">
+                                    <ul class="menu-sub">
                                         <ul>
                                             <li><a href="#">Bánh kẹo - Đồ ăn vặt - Giải khát</a></li>
                                             <li><a href="#">Bánh kẹo</a></li>
@@ -115,7 +115,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                    </nav>
+                                    </ul>
                                 </li>
                                 <li><a href="#">Thuốc bổ & Điề trị mắt</a></li>
                                 <li><a href="#">Xương khớp & Gout</a></li>
@@ -138,17 +138,21 @@
                 <div class="home-cate-main flex flex-space-between">
                     <div class="left">
                         <div class="fillter">
-                            <div class="fillter-box">
+                            <ul class="fillter-box">
                                 <h3>Đang lọc theo</h3>
                                 <div>
                                     <p><span>- Teas & Coffee</span> <i class="fa fa-trash-o" aria-hidden="true"></i></p>
                                     <p><span>- Xuất xứ USA</span> <i class="fa fa-trash-o" aria-hidden="true"></i></p>
                                     <p><span>- Giá dưới 500k</span> <i class="fa fa-trash-o" aria-hidden="true"></i></p>
                                 </div>
-                            </div>
-                            <div class="fillter-select">
-                                <h3>CHỨC NĂNG</h3>
-                                <div class="fillter-select-wrapt">
+                            </ul>
+                            
+                            <div class="fillter-select drop-wrap">
+                                <div class="fillter-select-title flex flex-space-between">
+                                    <h3>CHỨC NĂNG</h3>
+                                    <span class="fa fa-chevron-down drop-menu" aria-hidden="true"></span>
+                                </div>
+                                <div class="fillter-select-wrapt drop-item">
                                     <div>
                                         <input type="checkbox" checked id="fillter-check-01"><label for="fillter-check-01">Teas & Coffee (187)</label>
                                     </div>
@@ -172,9 +176,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fillter-select">
-                                <h3>THƯƠNG HIỆU</h3>
-                                <div class="fillter-select-wrapt">
+                            <div class="fillter-select drop-wrap">
+                                <div class="fillter-select-title flex flex-space-between">
+                                    <h3>THƯƠNG HIỆU</h3>
+                                    <span class="fa fa-chevron-down drop-menu" aria-hidden="true"></span>
+                                </div>
+                                <div class="fillter-select-wrapt drop-item">
                                     <div>
                                         <input type="checkbox" id="fillter-check-08" checked><label for="fillter-check-08">Teas & Coffee (187)</label>
                                     </div>
@@ -198,9 +205,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fillter-select">
-                                <h3>NGUỒN GỐC</h3>
-                                <div class="fillter-select-wrapt">
+                            <div class="fillter-select drop-wrap">
+                                <div class="fillter-select-title flex flex-space-between">
+                                    <h3>NGUỒN GỐC</h3>
+                                    <span class="fa fa-chevron-down drop-menu" aria-hidden="true"></span>
+                                </div>
+                                <div class="fillter-select-wrapt drop-item">
                                     <div>
                                         <input type="checkbox" id="fillter-check-15" checked><label for="fillter-check-15">Teas & Coffee (187)</label>
                                     </div>
@@ -224,9 +234,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fillter-select">
-                                <h3>GIÁ SẢN PHẨM</h3>
-                                <div class="fillter-select-wrapt">
+                            <div class="fillter-select drop-wrap">
+                                <div class="fillter-select-title flex flex-space-between">
+                                    <h3>GIÁ SẢN PHẨM</h3>
+                                    <span class="fa fa-chevron-down drop-menu" aria-hidden="true"></span>
+                                </div>
+                                <div class="fillter-select-wrapt drop-item">
                                     <div>
                                         <input type="checkbox" id="fillter-check-22" checked><label for="fillter-check-22">Giá từ 500k - trở xuống</label>
                                     </div>
@@ -250,7 +263,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>    
                     </div>
                     <div class="right">
                         <div class="home-cate-header flex flex-align-center">

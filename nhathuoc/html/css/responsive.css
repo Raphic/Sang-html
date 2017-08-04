@@ -8,171 +8,7 @@
 .mb{
     display: none;
 }
-/*============================ Menu Mobile ============================*/
-#cssmenu .logo {
-/*
-    position: relative;
-    z-index: 123;
-    padding: 10px;
-    font: 18px verdana;
-    color: #6DDB07;
-    float: left;
-    width: 15%
-*/
-    display: none;
-}
-/*
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #head-mobile {
-    border: 0;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
-#cssmenu #head-mobile {
-    display: none;
-}
-#cssmenu > ul > li > a {
-    padding: 17px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #ddd;
-    font-weight: 700;
-}
-*/
-@media screen and (max-width:768px) {
-    #cssmenu .logo {
-        position: absolute;
-        top: 0;
-        left: 20px;
-        height: 32px;
-        display: block;
-        padding: 0;
-        margin-top: 7px;
-    }
-    #cssmenu .logo a{
-        height: 100%;
-    }
-    #cssmenu .logo a img{
-        height: 100%;
-    }
-    .logo2 {
-        display: none
-    }
-    nav {
-        width: 100%;
-    }
-    #cssmenu {
-        width: 100%
-    }
-    #cssmenu ul {
-        width: 100%;
-        padding: 0;
-        display: none;
-        background: #f55197;
-        position: absolute;
-        -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
-        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2)
-    }
-    #cssmenu ul li {
-        width: 100%;
-    }
-    #cssmenu ul li:hover {
-        background: #363636;
-    }
-    #cssmenu ul li a{
-        width: 100%;
-        border-bottom: 0;
-        color: #fff;
-    }
-    #cssmenu li.current, 
-    #cssmenu li:hover{
-        box-shadow: none;
-    }
-    #cssmenu > ul > li.has-sub > a:after,
-    #cssmenu > ul > li.has-sub > a:before{
-        display: none
-    }
-    #cssmenu #head-mobile {
-        display: block;
-        padding: 20px;
-        color: #ddd;
-        font-size: 12px;
-        font-weight: 700
-    }
-    .button {
-        width: 32px;
-        height: 25px;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        cursor: pointer;
-        border: 1px solid #ec008c;
-        border-radius: 5px;
-        padding-left: 2px;
-    }
-    .button:after {
-        position: absolute;
-        display: block;
-        top: 10px;
-        height: 3px;
-        width: 26px;
-        border-top: 3px solid #ec008c;
-        border-bottom: 3px solid #ec008c;
-        content: ''
-    }
-    .button:before {
-        -webkit-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        transition: all .3s ease;
-        position: absolute;
-        display: block;
-        height: 3px;
-        width: 26px;
-        top: 4px;
-        background: #ec008c;
-        content: '';
-    }
-    .button.menu-opened{
-        background: #ec008c;
-    }
-    .button.menu-opened:after {
-        -webkit-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        transition: all .3s ease;
-        top: 10px;
-        left: 4px;
-        border: 0;
-        height: 3px;
-        width: 22px;
-        background: #fff;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg)
-    }
-    .button.menu-opened:before {
-        top: 10px;
-        left: 4px;
-        background: #fff;
-        width: 22px;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg)
-    }
-}
-/*============================ End Menu Mobile ============================*/
+
 @media screen and (max-width:768px){
     /*============= Home =============*/
     body{
@@ -190,7 +26,18 @@
     .banner-slider,
     .chung-nhan,
     .home-cate-main .right,
-    .home-cate-main{
+    .home-cate-main,
+    .main_content .leftprimary,
+    .main_content > .wrap,
+    .home_slide,
+    .home_hotnew,
+    .styleBa .itemnews-box .itemnews,
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3),
+    .styleMot .itemnews-box .itemnews:first-child,
+    .styleMot .itemnews-box .itemnews,
+    .detail_content .thumb{
         width: 100%;
     }
     
@@ -211,7 +58,8 @@
     .ads-content,
     .ads-left,
     .home-cate-main .left,
-    .menu-footer{
+    .menu-footer,
+    .main_content .rightprimary{
         display: none;
     }
     .bottom-header{
@@ -249,6 +97,10 @@
     }
     .home-cate-header{
         margin-top: 15px;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 100%;
+        position: relative;
     }
     .footer-content .box-1280{
         display: flex;
@@ -276,6 +128,9 @@
     }
     /*============= End Home =============*/
     /*============= Detail =============*/
+    .bread-crumb .button{
+        display: none;
+    }
     .detail-item-box{
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
@@ -312,7 +167,93 @@
     .detail-table .bottom > div:first-child h5 span{
         width: 135px;
     }
+    .detail-item-title h1 > span{
+        display: block;
+        margin-left: 0;
+    }
     /*============= End Detail =============*/
+    /*============= Home Cate =============*/
+    .home-cate-main{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .home-cate .left{
+        display: block;
+        width: 100%;
+    }
+    .fillter .fillter-select:nth-child(2){
+        padding-top: 15px;
+    }
+    .fillter-select{
+        padding: 0px 10px 5px;
+    }
+    .fillter-select-title .drop-menu{
+        display: block;
+    }
+    .fillter-select-wrapt.drop-item{
+        display: none;
+    }
+    .fillter-select-title{
+        border-bottom: none;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .right .home-cate-header{
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+    .right .home-cate-header:not(.bottom) > p:nth-child(2){
+        text-align: right;
+    }
+    .right .home-cate-header h1,
+    .right .home-cate-header > p{
+        width: 50%;
+    }
+    /*============= End Home Cate =============*/
+/*
+    .wrap-page, .leftprimary, .home_slide, .home_hotnew, .hot_video_box, .hot_video_comment, .hot_video_more, .video_thumb, .styleMot .itemnews-box .itemnews:first-child, .styleMot .itemnews-box .itemnews, .styleBa .itemnews-box .itemnews:first-child, .styleBa .itemnews-box .itemnews:nth-child(2), .styleBa .itemnews-box .itemnews:nth-child(3), .styleBa .itemnews-box .itemnews, .videostyle .itemnews-box .itemnews:first-child, .half, .leftfooter, .rightfooter, .detail_content .thumb, .content_recoment .thumb, .content_recoment .content_text, .category_box{
+        width: 100%;
+    }
+*/  
+    .hot_video, .video_thumb, 
+    .hotnew_img, 
+    .half .itemnews-box .itemnews:first-child .thumb, 
+    .styleMot .itemnews-box .itemnews:first-child .thumb, 
+    .videostyle .itemnews-box .itemnews:first-child .thumb, 
+    .videostyle .itemnews-box .itemnews .thumb, 
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3), 
+    .styleBa .itemnews-box .itemnews:first-child .thumb, 
+    .styleBa .itemnews-box .itemnews:nth-child(2) .thumb, 
+    .styleBa .itemnews-box .itemnews:nth-child(3) .thumb, 
+    .styleBon, .detail_content .thumb, .content_recoment .thumb, 
+    .styleBon .hotnew_content{
+        height: inherit;
+    }
+    
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3){
+        max-height: inherit;
+    }
+    .screenprimary{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .home_hotnew{
+        margin-top: 10px;
+    }
+    .home_hotnew,
+    .styleBa .itemnews-box .itemnews:nth-child(2){
+        margin-left: 0;    
+    }
+    .text-content h3{
+        margin-top: 0;
+    }
+    .cate-item{
+        display: none;
+    }
 }
 @media screen and (max-width:650px){
     .item-img,
@@ -380,6 +321,31 @@
         width: 140px;
     }
     /*============= End Detail =============*/
+    /*============= Home Cate =============*/
+    .right .home-cate-header h1{
+        margin-bottom: 8px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .right .home-cate-header h1, 
+    .right .home-cate-header > p{
+        width: 100%;
+    }
+    .right .home-cate-header > p,
+    .right .home-cate-header:not(.bottom) > p:nth-child(2){
+        text-align: left;
+        font-size: 14px;
+    }
+    .pagination-style{
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    .right .home-cate-header.bottom  .pagination-style{
+        top: 0;
+    }
+    /*============= End Home Cate =============*/
 }
 @media screen and (max-width:412px){
     .detail-table .bottom > div{
@@ -387,7 +353,7 @@
     }
 }
 @media screen and (max-width:360px){
-    .swiper-slide figure, .swiper-slide figure img{
+    .tabs-slider-detail .swiper-slide figure, .swiper-slide figure img{
         width: auto;
     }
 }
