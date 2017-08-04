@@ -11,5 +11,6 @@ function isIE() {
 include('js/jquery-2.1.1.js');
 include('js/jquery-ui.min.js');
 include('js/swiper.jquery.min.js');
+include('js/jquery.rd-navbar.js');
 /* Slider
  ========================================================*/
