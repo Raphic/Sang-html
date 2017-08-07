@@ -40,12 +40,18 @@
                             <a href="#"><img src="images/logo.png" alt=""></a>
                         </figure>
                     </div>
-                    <div class="search-top flex flex-space-between">
-                        <div class="warp-search">
-                            <input type="search" placeholder="Nhập từ khóa cần tìm" title="Search">
+                    <div class="search-top-box drop-wrap">
+                        <i class="mb-search fa fa-search drop-menu" aria-hidden="true"></i>
+                        <div class="drop-item">
+                            <div class="search-top flex flex-space-between">
+                                <div class="warp-search">
+                                    <input type="search" placeholder="Nhập từ khóa cần tìm" title="Search">
+                                </div>
+                                <button class="color-white">Search</button>
+                            </div>
                         </div>
-                        <button class="color-white">Search</button>
                     </div>
+                    
                     <div class="basket-page flex flex-space-between">
                         <div class="gio-hang flex flex-space-between flex-align-center">
                             <figure>
@@ -453,45 +459,49 @@
                                             <button class="btn-cancel drop-item">Hủy</button>
                                         </div>
                                         <!--Detail item đánh giá---------------------------------------------------- END-->
-                                        <h5 class="star-danhgia drop-item">Chọn vào ngôi sao
-                                            <span id='stars' class="recom-star">
-                                                <li class='star' title='Poor' data-value='1'> 
-                                                    <i class='fa fa-star fa-fw'></i> 
-                                                </li>
-                                                <li class='star' title='Fair' data-value='2'> 
-                                                    <i class='fa fa-star fa-fw'></i> 
-                                                </li>
-                                                <li class='star' title='Good' data-value='3'> 
-                                                    <i class='fa fa-star fa-fw'></i> 
-                                                </li>
-                                                <li class='star' title='Excellent' data-value='4'> 
-                                                    <i class='fa fa-star fa-fw'></i> 
-                                                </li>
-                                                <li class='star' title='WOW!!!' data-value='5'> 
-                                                    <i class='fa fa-star fa-fw'></i> 
-                                                </li>
-                                                <span class="rate khongThich">Không thích</span>
-                                                <span class="rate tamDuoc">Tạm Được</span>
-                                                <span class="rate binhThuong">Bình Thường</span>
-                                                <span class="rate ratTot">Rất tốt</span>
-                                                <span class="rate tuyetVoi">Tuyệt vời quá</span>
-                                            </span>
-                                        </h5>
+                                        <div class="drop-item">
+                                            <h5 class="star-danhgia">Chọn vào ngôi sao
+                                                <span id='stars' class="recom-star">
+                                                    <li class='star' title='Poor' data-value='1'> 
+                                                        <i class='fa fa-star fa-fw'></i> 
+                                                    </li>
+                                                    <li class='star' title='Fair' data-value='2'> 
+                                                        <i class='fa fa-star fa-fw'></i> 
+                                                    </li>
+                                                    <li class='star' title='Good' data-value='3'> 
+                                                        <i class='fa fa-star fa-fw'></i> 
+                                                    </li>
+                                                    <li class='star' title='Excellent' data-value='4'> 
+                                                        <i class='fa fa-star fa-fw'></i> 
+                                                    </li>
+                                                    <li class='star' title='WOW!!!' data-value='5'> 
+                                                        <i class='fa fa-star fa-fw'></i> 
+                                                    </li>
+                                                    <span class="rate khongThich">Không thích</span>
+                                                    <span class="rate tamDuoc">Tạm Được</span>
+                                                    <span class="rate binhThuong">Bình Thường</span>
+                                                    <span class="rate ratTot">Rất tốt</span>
+                                                    <span class="rate tuyetVoi">Tuyệt vời quá</span>
+                                                </span>
+                                            </h5>
+                                            <div class="form-danhgia">
+                                                <form>
+                                                    <div class="input-triple">
+                                                        <input type="text" title="Họ Tên" placeholder="Họ Tên" required>
+                                                        <input type="tel" title="Số điện thoại" placeholder="Số điện thoại" required>
+                                                        <input type="email" title="Email" placeholder="Email" required>
+                                                    </div>
+                                                    <div class="comment_bottom">
+                                                        <textarea class="box_comment" placeholder="Comment ... "></textarea>
+                                                        <button class="btn-submit">Bình luận</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                         
                                     <!--Form đánh giá------------------------------------------------------>
                                     <div class="form-danhgia">
-                                        <form>
-                                            <div class="input-triple">
-                                                <input type="text" title="Họ Tên" placeholder="Họ Tên" required>
-                                                <input type="tel" title="Số điện thoại" placeholder="Số điện thoại" required>
-                                                <input type="email" title="Email" placeholder="Email" required>
-                                            </div>
-                                            <div class="comment_bottom">
-                                                <textarea class="box_comment" placeholder="Comment ... "></textarea>
-                                                <button class="btn-submit">Bình luận</button>
-                                            </div>
-                                        </form>
                                         <div class="detail-item-danhgiakhac">
                                             <div class="comment_box">
                                                 <div class="user_comment">

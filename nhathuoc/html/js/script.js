@@ -191,8 +191,6 @@ $(document).ready(function(){
         autoplay: 4500,
         autoplayDisableOnInteraction: true
     });  
-     /* Get day
-    ========================================================*/
     /* Drop item 
     ========================================================*/
     (function ($) {

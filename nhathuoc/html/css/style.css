@@ -2073,6 +2073,7 @@ p.call-sp span{
 }
 #stars li.star > i.fa {
   color:#ccc; 
+  width: 16px;
 }
 #stars li.star.hover > i.fa {
   color:#ff9727;

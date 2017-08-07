@@ -126,13 +126,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+/*  right: 0;*/
+  width: 64px;
   height: 56px;
-  background: #7acade;
+  background: transparent;
+/*  background: #7acade;*/
   color: #FFF;
+/*
   -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+*/
   z-index: 99999991;
 }
 
@@ -148,6 +152,7 @@
   white-space: nowrap;
   text-align: left;
   margin-top: 0;
+  display: none;
 }
 
 .rd-mobilepanel_toggle {
@@ -182,7 +187,8 @@
 .rd-mobilepanel_toggle span:after, .rd-mobilepanel_toggle span:before, .rd-mobilepanel_toggle span {
   width: 24px;
   height: 4px;
-  background-color: #FFF;
+/*  background-color: #FFF;*/
+  background-color: #42c5e4;;
   backface-visibility: hidden;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -213,11 +219,13 @@
   -o-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+  background: #fff;    
 }
 .rd-mobilepanel_toggle.active span:before, 
 .rd-mobilepanel_toggle.active span:after {
   top: 0;
   width: 15px;
+  background: #fff;
 }
 .rd-mobilepanel_toggle.active span:before {
   -webkit-transform: rotate3d(0, 0, 1, -40deg);
@@ -226,12 +234,15 @@
 .rd-mobilepanel_toggle.active span:after {
   -webkit-transform: rotate3d(0, 0, 1, 40deg);
   transform: rotate3d(0, 0, 1, 40deg);
+  background: #fff;
 }
 /* =======================Active=====================*/
 @media (max-width: 991px) {
+/*
   body {
     padding-top: 56px;
   }
+*/
 
   .rd-mobilemenu, .rd-mobilepanel {
     display: block;

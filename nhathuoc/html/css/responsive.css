@@ -1,11 +1,14 @@
 @import "../css/mobile-menu.css";
 @charset "utf-8";
 /* CSS Document */
-
+.search-top-box .drop-item{
+    display: block;
+}
 .mb-breadCrumb{
     display: none;
 }
-.mb{
+.mb,
+.mb-search{
     display: none;
 }
 
@@ -14,10 +17,104 @@
     body{
         background: #fff;
     }
+    header{
+        position: relative;
+        z-index: 9
+    }
     .mb{
         display: block;
     }
     
+    .scroll-show-binhluan{
+        z-index: -999999;
+    }
+    .logo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: #fff;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        z-index: 99999992;
+        text-align: left;
+    }
+    .logo img{
+        width: 160px;
+        margin: 10px 0 0 60px;
+    }
+    .top-header{
+        position: fixed;
+        bottom: 0;
+        background: #42c5e4;
+        height: 30px;
+        padding: 4px 15px 0;
+    }
+    .top-header ul{
+        width: 100%;
+    }
+    .top-header ul li:nth-child(2),
+    .top-header ul li:nth-child(3),
+    .top-header ul li:nth-child(4){
+        display: none;
+    }
+    .top-header ul li a{
+        color: #fff;
+    }
+    .gio-hang{
+        position: fixed;
+        bottom: 3px;
+        right: 15px;
+    }
+    .gio-hang img{
+        width: 15px;
+    }
+    .gio-hang p{
+        font-size: 0;
+    }
+    .gio-hang p a{
+        font-size: 14px;
+        color: #fff;
+    }
+    .contact-top{
+        position: fixed;
+        bottom: 35px;
+        right: 5px;
+        background: #fae767;
+        padding: 5px 10px 0 5px;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    .contact-top img{
+        width: 25px;
+    }
+    .search-top-box{
+        position: fixed;
+        top: 50px;
+        z-index: 99999993;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+    .search-top-box .drop-item{
+        display: none;
+    }
+    .mb-search{
+        display: block;
+        position: fixed;
+        top: 12px;
+        right: 15px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #42c5e4;
+    }
+    body {
+        padding-top: 45px;
+      }
     
     .box-1280,
     .logo,
@@ -63,8 +160,7 @@
         display: none;
     }
     .bottom-header{
-        padding: 15px;
-        text-align: center;
+        padding: 0;
     }
     .basket-page{
         justify-content: flex-end;
@@ -101,6 +197,9 @@
         -webkit-flex-wrap: wrap;
         width: 100%;
         position: relative;
+    }
+    .home-cate-header button{
+        display: none;
     }
     .footer-content .box-1280{
         display: flex;
@@ -153,6 +252,12 @@
     .item-center >div{
         height: inherit;
     }
+    .tabs-sp h2{
+        font-size: 14px;
+    }
+    .tabs-sp input:checked + label h2{
+        font-weight: bold;
+    }
     .tabs-slider-detail .wrapt-item-02{
         width: 65%;
     }
@@ -167,9 +272,32 @@
     .detail-table .bottom > div:first-child h5 span{
         width: 135px;
     }
+    .detail-item-title{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .detail-item-title h1{
+        width: 100%;
+        font-size: 24px;
+    }
+    .detail-item-title h1 span{
+        margin-left: 0;
+    }
     .detail-item-title h1 > span{
         display: block;
         margin-left: 0;
+    }
+    .gallery-thumbs{
+        display: none;
+    }
+    .item-img .swiper-container{
+        
+    }
+     .item-img .swiper-container .swiper-slide img{
+        width: 100%;
+    }
+    .item-info{
+        padding-top: 15px;
     }
     /*============= End Detail =============*/
     /*============= Home Cate =============*/
@@ -283,13 +411,6 @@
 
 @media screen and (max-width:480px){
     /*============= Home =============*/
-    .top-header ul{
-        width: 100%;
-    }
-    .top-header ul li:nth-child(2),
-    .top-header ul li:nth-child(3){
-        display: none;
-    }
     .chung-nhan > div{
         width: 100%;
     }
@@ -312,6 +433,21 @@
     .footer-content > div > div{
         width: 100%;
     }
+    .tabs-sp h2{
+        font-size: 12px;
+    }
+    .tabs-sp label,
+    .tabs-sp label[for*='3']{
+        padding: 5px 10px;
+    }
+    .tabs-sp label[for*='3']:after{
+        content: none;
+    }
+    .tabs-sp #tab1:checked ~ #content1, 
+    .tabs-sp #tab2:checked ~ #content2, 
+    .tabs-sp #tab3:checked ~ #content3{
+        background: #efeded;
+    }
     /*============= End Home =============*/
     /*============= Detail =============*/
     .btn-muangay p{
@@ -319,6 +455,20 @@
     }
     .detail-table-info > div > p:first-child{
         width: 140px;
+    }
+    .detail-item-danhgia{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .detail-item-danhgia h3{
+        width: 100%;
+    }
+    .detail-item-danhgia .btn-danhgia,
+    .detail-item-danhgia .btn-cancel{
+        margin-top: 15px;
+    }
+    .detail-item-danhgia .btn-danhgia:before{
+        content: none;
     }
     /*============= End Detail =============*/
     /*============= Home Cate =============*/
@@ -358,5 +508,14 @@
     }
 }
 @media screen and (max-width:320px){
-  
+    .btn-muangay{
+        padding: 5px;
+    }
+    .btn-muangay p {
+        font-size: 14px;
+    }
+    .tabs-sp label,
+    .tabs-sp label[for*='3']{
+        padding: 5px;
+    }
 }
