@@ -406,6 +406,23 @@
     .cate-item{
         display: none;
     }
+    /*============= Tra cuu don hang =============*/
+    .tracuudh{
+        width: 100%;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .input-triple,
+    .input-double {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .input-triple input,
+    .input-double select{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /*============= End Mua ngay =============*/
 }
 @media screen and (max-width:650px){
     .item-img,
@@ -431,6 +448,41 @@
         margin-top: 5px;
     }
     /*============= End Home =============*/
+    /*============= Tra cuu don hang =============*/
+    .tracuu-sp > div,
+    .tracuu-sp > div:last-child{
+        width: 20%;
+    }
+    .tracuu-sp h5 span{
+        display: block;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .total-price{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .total-price >div:first-child,
+    .total-price >div{
+        width: 100%;
+    }
+    .tracuu-thanhtien p, 
+    .total-price >div:last-child p{
+        margin-right: 0;
+    }
+    .total-price >div:last-child p{
+        text-align: left;
+    }
+    .total-price >div:last-child .phi-tong{
+        text-align: right;
+    }
+    .total-price >div:last-child p span{
+        width: 180px;
+    }
+    .phi-vc{
+        margin-top: 10px;
+    }
+    /*============= End Mua ngay =============*/
 }
 
 @media screen and (max-width:480px){
@@ -520,6 +572,46 @@
         top: 0;
     }
     /*============= End Home Cate =============*/
+    /*============= Tra cuu don hang =============*/
+    .tracuu-sp{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .tracuu-sp > div:first-child{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .tracuu-sp > div:nth-child(2),
+    .tracuu-sp > div:last-child{
+        width: 50%;
+        text-align: right;
+    }
+    .tracuu-input{
+        width: 100%;
+    }
+    .tracuu-input input{
+        width: calc(100% - 125px);
+    }
+    .logo-tracuu img{
+        width: 70%;
+    }
+    .info-customer p{
+        font-weight: 300;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .info-customer p span{
+        display: block;
+        font-weight: bold;
+        width: 100%;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .tracuudh .btn-muangay{
+        width: 100%;
+    }
+    /*============= End Mua ngay =============*/
 }
 @media screen and (max-width:412px){
     .detail-table .bottom > div{
@@ -534,6 +626,9 @@
 @media screen and (max-width:320px){
     .btn-muangay{
         padding: 5px;
+    }
+    .btn-muangay span{
+        font-size: 12px;
     }
     .btn-muangay p {
         font-size: 14px;

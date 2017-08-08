@@ -1701,7 +1701,10 @@ p.note{
 .tracuu-sp > div{
     width: 30%;
 }
-
+.tracuu-sp h5 span{
+    text-decoration:line-through;
+    margin-left: 5px;
+}
 .tracuu-sp > div:last-child{
     width: 10%
 }
