@@ -1,7 +1,8 @@
 @import "../css/mobile-menu.css";
 @charset "utf-8";
 /* CSS Document */
-.search-top-box .drop-item{
+.search-top-box .drop-item,
+.main-sub .sub{
     display: block;
 }
 .mb-breadCrumb{
@@ -12,6 +13,12 @@
     display: none;
 }
 
+.show{
+    display: block !important;
+}
+.hidden{
+    display: none !important;
+}
 @media screen and (max-width:768px){
     /*============= Home =============*/
     body{
@@ -41,7 +48,7 @@
     }
     .logo img{
         width: 160px;
-        margin: 10px 0 0 60px;
+        margin: 8px 0 0 60px;
     }
     .top-header{
         position: fixed;
@@ -309,7 +316,7 @@
         display: block;
         width: 100%;
     }
-    .fillter .fillter-select:nth-child(2){
+    .fillter .fillter-select:nth-child(1){
         padding-top: 15px;
     }
     .fillter-select{
@@ -325,6 +332,23 @@
         border-bottom: none;
         font-size: 12px;
         margin-bottom: 5px;
+    }
+    
+    .fillter{
+
+    }
+    .main-sub .fa-filter{
+        top: -18px;
+        right: 0;
+        z-index: 4;
+    }
+    .main-sub .sub{
+        display: none;
+    }
+    .fillter-box .fa-filter:after{
+        content: 'Bộ lọc';
+        display: inline-block;
+        margin-left: 5px;
     }
     .right .home-cate-header{
         justify-content: space-between;

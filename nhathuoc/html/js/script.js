@@ -1,64 +1,6 @@
 $(document).ready(function(){
     /* Menu Mobile 
     ========================================================*/
-    (function ($) {
-        $.fn.menumaker = function (options) {
-            var cssmenu = $(this)
-                , settings = $.extend({
-                    format: "dropdown"
-                    , sticky: false
-                }, options);
-            return this.each(function () {
-                $(this).find(".button").on('click', function () {
-                    $(this).toggleClass('menu-opened');
-                    var mainmenu = $(this).next('ul');
-                    if (mainmenu.hasClass('open')) {
-                        mainmenu.slideToggle().removeClass('open');
-                    }
-                    else {
-                        mainmenu.slideToggle().addClass('open');
-                        if (settings.format === "dropdown") {
-                            mainmenu.find('ul').show();
-                        }
-                    }
-                });
-                cssmenu.find('li ul').parent().addClass('has-sub');
-                multiTg = function () {
-                    cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-                    cssmenu.find('.submenu-button').on('click', function () {
-                        $(this).toggleClass('submenu-opened');
-                        if ($(this).siblings('ul').hasClass('open')) {
-                            $(this).siblings('ul').removeClass('open').slideToggle();
-                        }
-                        else {
-                            $(this).siblings('ul').addClass('open').slideToggle();
-                        }
-                    });
-                };
-                if (settings.format === 'multitoggle') multiTg();
-                else cssmenu.addClass('dropdown');
-                if (settings.sticky === true) cssmenu.css('position', 'fixed');
-                resizeFix = function () {
-                    var mediasize = 768;
-                    if ($(window).width() > mediasize) {
-                        cssmenu.find('ul').show();
-                    }
-                    if ($(window).width() <= mediasize) {
-                        cssmenu.find('ul').hide().removeClass('open');
-                    }
-                };
-                resizeFix();
-                return $(window).on('resize', resizeFix);
-            });
-        };
-    })(jQuery);
-    (function ($) {
-        $(document).ready(function () {
-            $("#cssmenu").menumaker({
-                format: "multitoggle"
-            });
-        });
-    })(jQuery);
     
     /* Slider
     ========================================================*/
@@ -219,12 +161,48 @@ $(document).ready(function(){
             } 
 
         });
+        
+        
 
 //        $("body").on("click", function() {
 //            closeToggle();
 //        });   
     })(jQuery);
     
+    $(function () {
+//        $('.fillter .sub').hide();
+        $('.main-sub .main-show').click(function(e) {
+            $('.main-sub .sub').slideToggle(400);
+            $('.sub').toggleClass('active');
+            e.stopPropagation();
+        });
+    });
+    /* Rate button show 
+    ========================================================*/
+    $(function () {
+        $('.drop-rate .btn-danhgia').click(function(e) {
+            $(this).addClass('hidden');
+            $(this).removeClass('show');
+            
+            $('.drop-rate .btn-cancel').addClass('show');
+            $('.drop-rate .btn-cancel').removeClass('hidden');
+            
+            $('.drop-rate-form').addClass('show');
+            $('.drop-rate-form').removeClass('hidden');
+            e.stopPropagation();
+        });
+        $('.drop-rate .btn-cancel').click(function(e) {
+            $(this).addClass('hidden');
+            $(this).removeClass('show');
+            
+            $('.drop-rate .btn-danhgia').addClass('show');
+            $('.drop-rate .btn-danhgia').removeClass('hidden');
+            
+            $('.drop-rate-form').removeClass('show');
+            $('.drop-rate-form').addClass('hidden');
+            e.stopPropagation();
+        });
+    });
     /* Scroll show menu 
     ========================================================*/
     $(window).scroll(function() {
@@ -247,44 +225,37 @@ $(document).ready(function(){
     /* Rate star
     ========================================================*/
     $(document).ready(function(){
-  
-      /* 1. Visualizing things on Hover - See next part for action on click */
-      $('#stars li').on('mouseover', function(){
-        var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
-        // Now highlight all the stars that's not after the current hovered star
-        $(this).parent().children('li.star').each(function(e){
-          if (e < onStar) {
-            $(this).addClass('hover');
-          }
-          else {
-            $(this).removeClass('hover');
-          }
+        /* 1. Visualizing things on Hover - See next part for action on click */
+        $('#stars li').on('mouseover', function(){
+            var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+            $(this).parent().children('li.star').each(function(e){
+                if (e < onStar) {
+                    $(this).addClass('hover');
+                }
+                else {
+                    $(this).removeClass('hover');
+                    }
+                });
+            }).on('mouseout', function(){
+            $(this).parent().children('li.star').each(function(e){
+                    $(this).removeClass('hover');
+                });
+            });
+            /* 2. Action to perform on click */
+            $('#stars li').on('click', function(){
+                var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+                var stars = $(this).parent().children('li.star');
+                for (i = 0; i < stars.length; i++) {
+                $(stars[i]).removeClass('selected');
+                }
+                for (i = 0; i < onStar; i++) {
+                    $(stars[i]).addClass('selected');
+                }
+            });
+            /* 3. Add tooltip */
+            
         });
-
-      }).on('mouseout', function(){
-        $(this).parent().children('li.star').each(function(e){
-          $(this).removeClass('hover');
-        });
-      });
-
-
-      /* 2. Action to perform on click */
-      $('#stars li').on('click', function(){
-        var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-        var stars = $(this).parent().children('li.star');
-
-        for (i = 0; i < stars.length; i++) {
-          $(stars[i]).removeClass('selected');
-        }
-
-        for (i = 0; i < onStar; i++) {
-          $(stars[i]).addClass('selected');
-        }
-      });
-        
     });
-    
-});
 
 function openpopupinfo(){$('.wrapPopup').show();}
 

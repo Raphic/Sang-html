@@ -1306,7 +1306,7 @@ footer li a{
     font-size: 12px;
     font-weight: 300;
     color: #fff;
-    padding: 5px 7px 4px;
+    padding: 2px 7px 2px;
     margin-left: 5px;
     border-radius: 3px;
     position: relative;
@@ -1418,8 +1418,30 @@ footer li a{
     width: 585px;
 }
 /******************** Fillter ********************/
+.main-sub{
+    position: relative;
+}
+.main-sub .fa-filter{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 5px;
+    background: #25c3eb;
+    z-index: 2;
+    font-size: 12px;
+}
+.main-sub .fa-filter span{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+}
 .fillter{
     width: 100%;
+    position: relative;
+    z-index: 3;
     background-color:  #edeaea;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.18);
 }
@@ -2059,6 +2081,7 @@ p.call-sp span{
 #stars li[data-value='1']:hover ~ span.khongThich{
     display: inline-block;
 }
+
 #stars li[data-value='2']:hover ~ span.tamDuoc{
     display: inline-block;
 }
@@ -2082,10 +2105,10 @@ p.call-sp span{
   color:#ff9727;
 }
 
-
-
-
-
+.drop-rate .btn-cancel,
+.drop-rate-form{
+    display: none;
+}
 
 
 
