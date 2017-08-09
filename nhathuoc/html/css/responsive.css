@@ -456,6 +456,14 @@
     .tracuu-sp h5 span{
         display: block;
     }
+    .tracuu-content form h3{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .tracuu-content form h3 span{
+        margin-top: 5px;
+        width: 100%;
+    }
     /*============= End Tra cuu don hang =============*/
     /*============= Mua ngay =============*/
     .total-price{
