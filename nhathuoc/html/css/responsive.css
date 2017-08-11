@@ -135,6 +135,10 @@
     .main_content > .wrap,
     .home_slide,
     .home_hotnew,
+    .category.detail .styleBon,
+    .category_box,
+    .styleBon .itemnews:first-child .thumb,
+    .styleBon .itemnews:first-child .text-content,
     .styleBa .itemnews-box .itemnews,
     .styleBa .itemnews-box .itemnews:first-child, 
     .styleBa .itemnews-box .itemnews:nth-child(2), 
@@ -144,7 +148,9 @@
     .detail_content .thumb{
         width: 100%;
     }
-    
+    .leftprimary{
+        margin-right: 0;
+    }
     .box-1280.flex{
         display: block;
     }
@@ -152,7 +158,8 @@
     .search-top input[type=search]{
         width: inherit;
     }
-    .bottom-header{
+    .bottom-header,
+    .styleBon .itemnews:first-child .thumb{
         height: inherit;
     }
     .main-menu,
@@ -177,7 +184,9 @@
     .contact-top{
         margin-left: 15px;
     }
-    .chung-nhan{
+    .chung-nhan,
+    .category.detail .styleBon,
+    .styleBon .itemnews:first-child{
         display: flex;
         display: -webkit-flex;
         flex-wrap: wrap;
@@ -406,6 +415,9 @@
     .cate-item{
         display: none;
     }
+    .text-content h3 a{
+        font-size: 14px;
+    }
     /*============= Tra cuu don hang =============*/
     .tracuudh{
         width: 100%;
@@ -491,6 +503,9 @@
         margin-top: 10px;
     }
     /*============= End Mua ngay =============*/
+    .styleNam .itemnews .text-content .shortcontent{
+        display: none;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -620,6 +635,12 @@
         width: 100%;
     }
     /*============= End Mua ngay =============*/
+    .styleNam .itemnews .thumb{
+        width: 190px;
+    }
+    .styleNam .itemnews .text-content .subcontent{
+        display: none;
+    }
 }
 @media screen and (max-width:412px){
     .detail-table .bottom > div{
@@ -629,6 +650,15 @@
 @media screen and (max-width:360px){
     .tabs-slider-detail .swiper-slide figure, .swiper-slide figure img{
         width: auto;
+    }
+    .styleNam .itemnews{
+        margin-bottom: 15px;
+    }
+    .styleNam .itemnews .text-content{
+        width: calc(100% - 130px);
+    }
+    .styleNam .itemnews .thumb{
+        width: 120px;
     }
 }
 @media screen and (max-width:320px){

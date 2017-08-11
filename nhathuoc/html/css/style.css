@@ -1500,7 +1500,7 @@ footer li a{
 
 .fillter-select input[type="checkbox"]:not(:checked),
 .fillter-select input[type="checkbox"]:checked{
-    position: absolute;
+    position: fixed;
     z-index: -9999;
     left: 99999px;
 }

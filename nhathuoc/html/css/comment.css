@@ -180,9 +180,11 @@
 .home_hotnew ul li:not(:first-child) a span{
     display: none;
 }
+/*
 .hotnew_wrap{
     margin-bottom: 30px;
 }
+*/
 
 .hotnew_header{
     padding: 0 0 4px;
@@ -197,7 +199,7 @@
     padding: 8px 0 5px 3px;
 }
 .hotnew_wrap:first-child .hotnew_box{
-    background: rgba(226, 224, 224, 1);
+/*    background: rgba(226, 224, 224, 1);*/
     margin: 0 0 10px;
 }
 .hotnew_wrap:first-child .hotnew_box .text-content{
@@ -287,7 +289,7 @@
     height: 100%;
 }
 .category_box{
-    width: 610px;
+    width: 725px;
 }
 /******************** Full ********************/
 .full{
