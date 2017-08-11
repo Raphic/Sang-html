@@ -4,6 +4,7 @@
 @import "../css/comment.css";
 @import "../css/animation.css";
 @import "../css/swiper.min.css";
+@import "../css/flexslider.css";
 
 @charset "utf-8";
 
@@ -2119,8 +2120,15 @@ p.call-sp span{
     display: none;
 }
 
-
-
+.flexslider{
+    margin: 0;
+    border: none;
+    padding: 10px 0;
+}
+#carousel.flexslider{
+    height: 90px;
+    overflow: hidden;
+}
 
 
 

@@ -109,30 +109,54 @@ $(document).ready(function(){
         }
     });
     
-    var galleryTop = new Swiper('.gallery-top', {
-        spaceBetween: 5,
-        loop:true,
-        loopedSlides: 5,
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 5,
-        slidesPerView: 5,
-        touchRatio: 0.2,
-        loop:true,
-        loopedSlides: 5,
-        slideToClickedSlide: true
-    });
-    galleryTop.params.control = galleryThumbs;
-    galleryThumbs.params.control = galleryTop;
-    
-    var swiper = new Swiper('.home_slide', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 20,
-        centeredSlides: true,
-        autoplay: 4500,
-        autoplayDisableOnInteraction: true
-    });  
+//    var galleryTop = new Swiper('.gallery-top', {
+//        spaceBetween: 5,
+//        loop:true,
+//        loopedSlides: 5,
+//    });
+//    var galleryThumbs = new Swiper('.gallery-thumbs', {
+//        spaceBetween: 5,
+//        slidesPerView: 5,
+//        touchRatio: 0.2,
+//        loop:true,
+//        loopedSlides: 5,
+//        slideToClickedSlide: true
+//    });
+//    galleryTop.params.control = galleryThumbs;
+//    galleryThumbs.params.control = galleryTop;
+//    
+//    var swiper = new Swiper('.home_slide', {
+//        pagination: '.swiper-pagination',
+//        paginationClickable: true,
+//        spaceBetween: 20,
+//        centeredSlides: true,
+//        autoplay: 4500,
+//        autoplayDisableOnInteraction: true
+//    });  
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('#carousel').flexslider({
+                animation: "slide"
+                , controlNav: false
+                , animationLoop: false
+                , slideshow: false
+                , itemWidth: 210
+                , itemMargin: 5
+                , asNavFor: '#slider'
+            });
+            $('#slider').flexslider({
+                animation: "slide"
+                , controlNav: false
+                , animationLoop: false
+                , slideshow: false
+                , sync: "#carousel"
+                , start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
     /* Drop item 
     ========================================================*/
     (function ($) {
