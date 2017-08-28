@@ -1,4 +1,4 @@
-@import "../css/mobile-menu.css";
+﻿@import "../css/mobile-menu.css";
 @charset "utf-8";
 /* CSS Document */
 .search-top-box .drop-item,
@@ -19,7 +19,7 @@
 .hidden{
     display: none !important;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     /*============= Home =============*/
     body{
         background: #fff;
@@ -644,6 +644,9 @@
     .styleNam .itemnews .text-content .subcontent{
         display: none;
     }
+    .wrapt-item-02 .item-content h4{
+    height: 75px; color:#000;
+}
 }
 @media screen and (max-width:412px){
     .detail-table .bottom > div{
@@ -678,4 +681,5 @@
     .tabs-sp label[for*='3']{
         padding: 5px;
     }
+    .wrapt-item-02:hover .btnmuangaylist{font-size: 12px;}
 }

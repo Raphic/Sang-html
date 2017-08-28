@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+
+.wrapt-item-01:hover,
+.wrapt-item-02:hover{
+    cursor: pointer;
+}
+
+.wrapt-item-02:hover{
+    border:1px solid #d1d1d1;
+}
+.wrapt-item-02:hover .btnmuangaylist{ visibility:visible}
+.wrapt-item-01:hover .item-content h4 a{
+    
+    
+}
+.wrapt-item-01:hover .item-content h5 a,
+.wrapt-item-02:hover .item-content h5 a{
+    color: #ec1848;transition:all 0.3s;
+}
+.wrapt-item-01:hover .item-content h5 span,
+.wrapt-item-02:hover .item-content h5 span{
+    color: #000;
+}
+
+.wrapt-item-02:hover .item-content h4 a{
+    color: #000!important;
+    transition:all 0.3s;
+}
+
+.menu-sub ul li a:hover{
+    color: #000;
+}
+

@@ -1,4 +1,4 @@
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+﻿@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import "../css/reset.css";
 @import "../css/comment.css";
@@ -15,7 +15,7 @@
     -webkit-box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial',Tahoma, Verdana, sans-serif;
     font-size: 14px;
     line-height: 1.3em;
     font-weight: 400;
@@ -138,8 +138,14 @@ input, select{
     width: 405px;
 }
 .basket-page > div > figure{
-    margin-right: 10px;
+    margin-right: 5px;
 }
+.contact-top{
+
+font-size: 11px;
+}
+.contact-top a{font-size:17px;color: #d41212;
+width: auto;}
 /******************** Banner ********************/
 .banner{
     margin-top: 15px;
@@ -679,22 +685,32 @@ input, select{
 }
 /******************** Wrapt Item 02 ********************/
 .wrapt-item-02{
-    width:180px;
+    width:210px;
     text-align: center;
     position: relative;
-    padding: 20px 0;
-    margin: 0 30px;
+    padding: 8px;
+    margin: 0 15px 25px;
+    border:1px solid #fff;
 }
 .wrapt-item-02 .item-content{
     width: 100%;
 }
+.wrapt-item-02 .item-content h4{
+    height: 45px; color:#000;
+}
 .wrapt-item-02 .item-content h4,
 .wrapt-item-02 .item-content h5{
-    text-align: center;
+    text-align: left;
 }
 .wrapt-item-02 .item-content h5{
     font-size: 16px;
 }
+.wrapt-item-02 .item-content h5 a label{padding: 0 5px; font-size:13px; font-weight:lighter;
+    margin: 0 0 0 5px;
+    background: #D4232B;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;}
 .wrapt-item-02 .item-branch .sale-off{
     position: absolute;
     right: 0;
@@ -708,8 +724,11 @@ input, select{
     top: 50%;
     transform: translateY(-50%);
 }
-.recom-star{
-    padding-top: 10px;
+.wrapt-item-02 figure a img{
+    max-width:100%
+} 
+.wrapt-item-02 .recom-star{
+    padding-top: 10px; text-align:left
 }
 .recom-star i.fa{
     margin: 0 1px;
@@ -723,6 +742,37 @@ input, select{
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
 }
+
+
+.wrapt-item-02 .btnmuangaylist{
+    margin-top: 10px;
+    padding-bottom: 9px;
+    border: 1px solid #f37022;
+    background-color: #f37022;
+    transition: background-color .15s ease-in;
+
+    outline: none;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    
+    color: rgb(255,255,255);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+  
+    display: inline-block;
+    text-decoration: none;
+    transition: color .15s ease-in;
+    width: 100%;
+    visibility:hidden;
+}
+.wrapt-item-02 .btnmuangaylist:hover{ background:#fff; color:#f37022}
+
+
+
+
 /******************** Home Cate ********************/
 .home-cate{
     padding: 0px 15px;
@@ -898,7 +948,8 @@ footer li a{
     position: absolute;
     top: 30px;
     left: 0;
-    z-index: 2
+    z-index: 9999;
+/*    z-index: 2;*/
 }
 .button {
     width: 17px;
@@ -970,6 +1021,11 @@ footer li a{
     background: #e6e6e6;
     padding: 7px 15px 5px;
     position: relative;
+/*
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+*/
 }
 .bread-crumb > div{
     position: relative;
@@ -977,18 +1033,30 @@ footer li a{
 .bread-crumb .button{
     margin-right: 15px;
 }
-.bread-crumb ul li a{
-    font-size: 12px;
-    color: #000;
-    margin-right: 5px;
+/*==== Khoa add 23-08-2017 ====*/
+.bread-crumb ul{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+.bread-crumb > div > ul li a{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #288ad6;
+    padding: 0 10px 0 0;
+
 }
 .bread-crumb ul li:not(:last-child) a:after{
-    content: '/';
+    content: '›';
     display: inline-block;
-    margin-left: 5px;
-}
-.bread-crumb ul li.active a{
-    text-decoration: underline;
+    margin-left: 10px;
+    font-size: 20px;
+    color:#999;
+
 }
 /******************** Detail Page ********************/
 .detail-page{
@@ -996,12 +1064,11 @@ footer li a{
 }
 .detail-item-title{
     padding: 0 0 10px;
-    border-bottom: 1px solid #ececec;
 }
 .detail-item-title h1{
     color: #242424;
     width: calc(100% - 150px);
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 400;
 }
 .detail-item-title h1 a{
@@ -1021,7 +1088,7 @@ footer li a{
 }
 
 .detail-item-box{
-    padding: 30px 0;
+    padding: 10px 0;
 }
 .item-img{
     width: 440px;
@@ -1031,7 +1098,7 @@ footer li a{
 }
 .item-info .item-price{
     color: #df0023;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
 }
 .item-info .item-price>p{
@@ -1066,13 +1133,13 @@ footer li a{
 }
 
 .item-center{
-    width: 320px;
+    width: 320px; margin-top:-10px;
 }
 .item-center >div{
     border: solid 1px #e9e9e9;
     background: #f7f6f6;
     padding: 20px;
-    height: 298px;
+    min-height: 298px;
 }
 .item-center p{
     font-size: 12px;
@@ -1085,10 +1152,10 @@ footer li a{
     margin: 10px 0;
 }
 .item-center select{
-    border: none;
+    border: 1px solid #ddd;
     color: #000;
     background: transparent;
-    padding-right: 5px;
+    margin-right: -5px;
     font-size: 14px;
     margin-left: -3px;
     font-weight: 700;
@@ -1097,7 +1164,10 @@ footer li a{
     appearance: none;
     cursor: pointer;
     position: relativer;
-/*    outline:none;*/
+    outline: none;
+    height: 30px;
+    min-width:90px;
+
 }
 .select-style{
     display: inline-block;
@@ -1144,15 +1214,35 @@ footer li a{
 .detail-item-info .title{
     border-bottom: 1px solid #ececec;
     padding-bottom: 10px;
+    height:59px; background:#eee; line-height:55px
 }
 .detail-item-info .title h4{
-    width: 170px;
+    min-width: 80px; margin-left:10px; margin-right:20px; position:relative;
 }
 .detail-item-info .title h4 a{
     color: #464646;
     font-size: 14px;
     font-weight: 400;
 }
+.detail-item-info .title h4 .num-comment {
+    position: absolute;
+    top: 10px;
+    left: 62px;
+    display: inline-block;
+    background: #e40c0c;
+    font-size: 12px;
+    padding: 0 7px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    height: 17px;
+    line-height: 19px;
+}
+
+.detail-item-info .title h4:hover a{border-bottom:2px solid #E40C0C}
 /********** Left **********/
 .detail-item-info .left{
     width: 900px;
@@ -1251,6 +1341,7 @@ footer li a{
     margin: 0;
     padding: 0;
     border-bottom: none;
+    padding-left:10px;
 }
 .item-comment .comment > .title{
     margin-bottom: 20px;
@@ -1260,7 +1351,7 @@ footer li a{
 }
 .item-comment .comment_bottom button{
     position: absolute;
-    top: 45px;
+    bottom: 30px;
     right: 15px;
 }
 .item-comment .comment_bottom p{
@@ -1304,10 +1395,10 @@ footer li a{
 }
 .star-danhgia > span > span{
     background: #52b858;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     color: #fff;
-    padding: 2px 7px 2px;
+    padding: 1px 7px 1px;
     margin-left: 5px;
     border-radius: 3px;
     position: relative;
@@ -1320,7 +1411,7 @@ footer li a{
 	height: 0;
     position: absolute;
     left: -10px;
-    top: 8px;
+    top: 7px;
 	border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #52b858;
@@ -1434,7 +1525,7 @@ footer li a{
     font-size: 12px;
 }
 .main-sub .fa-filter span{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin-left: 5px;
     font-size: 14px;
     vertical-align: middle;
@@ -1668,6 +1759,13 @@ footer li a{
 }
 .tracuu-input input{
     width: 235px;
+}
+.item-info > p.tracuu-info{
+    display: block;
+    padding: 10px 10px;
+    background: #fefefe;
+    color: #000;
+    border: 1px solid #e2e2e2;
 }
 p.tracuu-info{
     display: block;
@@ -1922,13 +2020,16 @@ p.call-sp span{
 }
 .btn-muangay p{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
 }
 .btn-muangay span{
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
 }
+
+.btn-muangay:hover p{font-weight:200;}
+.btn-muangay:hover span{font-weight: 200;}
 
 /******************** Ads ********************/
 /*
@@ -1952,7 +2053,7 @@ p.call-sp span{
 .scroll-show-binhluan{
     background-color:  #e6e6e6;
     box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.16);
-    padding: 5px 40px;
+    padding: 1px 40px;
     position: fixed;
     z-index: 9;
     top: 0;
@@ -1966,13 +2067,33 @@ p.call-sp span{
     margin: auto;
 }
 .scroll-show-binhluan h4{
-    width: 170px;
+    min-width: 80px; margin-left:10px; margin-right:20px;position: relative;
 }
 .scroll-show-binhluan h4 a{
     font-weight: 500;
     color: #000;
     cursor: pointer;
+    height:55px; line-height:55px;
 }
+.scroll-show-binhluan h4 .num-comment {
+    position: absolute;
+    top: 10px;
+    left: 62px;
+    display: inline-block;
+    background: #e40c0c;
+    font-size: 12px;
+    padding: 0 7px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    height: 17px;
+    line-height: 19px;
+}
+
+.scroll-show-binhluan h4:hover a{border-bottom:2px solid #E40C0C}
 .scroll-show-binhluan .btn-muangay{
     width: 270px;
     height: 40px;
