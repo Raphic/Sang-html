@@ -1,0 +1,761 @@
+﻿@import "../css/mobile-menu.css";
+@charset "utf-8";
+/* CSS Document */
+.search-top-box .drop-item,
+.main-sub .sub{
+    display: block;
+}
+.mb-breadCrumb{
+    display: none;
+}
+.mb,
+.mb-search{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+.hidden{
+    display: none !important;
+}
+@media screen and (max-width:1024px){
+    /*============= Home =============*/
+    body{
+        background: #fff;
+    }
+    header{
+        position: relative;
+        z-index: 9
+    }
+    .mb{
+        display: block;
+    }
+    
+    .scroll-show-binhluan{
+        z-index: -999999;
+    }
+    .logo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        z-index: 99999992;
+        text-align: left;
+    }
+    .logo img{
+        width: 160px;
+        margin: 8px 0 0 60px;
+    }
+    .top-header{
+        position: fixed;
+        bottom: 0;
+        background: #42c5e4;
+        height: 30px;
+        padding: 4px 15px 0;
+    }
+    .top-header ul{
+        width: 100%;
+    }
+    .top-header ul li:nth-child(2),
+    .top-header ul li:nth-child(3),
+    .top-header ul li:nth-child(4){
+        display: none;
+    }
+    .top-header ul li a{
+        color: #fff;
+    }
+    .gio-hang{
+        position: fixed;
+        bottom: 3px;
+        right: 15px;
+    }
+    .gio-hang img{
+        width: 15px;
+    }
+    .gio-hang p{
+        font-size: 0;
+    }
+    .gio-hang p a{
+        font-size: 14px;
+        color: #fff;
+    }
+    .contact-top{
+        position: fixed;
+        bottom: 35px;
+        right: 5px;
+        background: #fae767;
+        padding: 5px 10px 0 5px;
+        border-radius: 25px;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    .contact-top img{
+        width: 25px;
+    }
+    .search-top-box{
+        position: fixed;
+        top: 50px;
+        z-index: 99999993;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+    .search-top-box .drop-item{
+        display: none;
+    }
+    .mb-search{
+        display: block;
+        position: fixed;
+        top: 12px;
+        right: 15px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background: #42c5e4;
+    }
+    body {
+        padding-top: 45px;
+      }
+    
+    .box-1280,
+    .logo,
+    .search-top,
+    .basket-page,
+    .banner-slider,
+    .chung-nhan,
+    .home-cate-main .right,
+    .home-cate-main,
+    .main_content .leftprimary,
+    .main_content > .wrap,
+    .home_slide,
+    .home_hotnew,
+    .category.detail .styleBon,
+    .category_box,
+    .styleBon .itemnews:first-child .thumb,
+    .styleBon .itemnews:first-child .text-content,
+    .styleBa .itemnews-box .itemnews,
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3),
+    .styleMot .itemnews-box .itemnews:first-child,
+    .styleMot .itemnews-box .itemnews,
+    .detail_content .thumb{
+        width: 100%;
+    }
+    .leftprimary{
+        margin-right: 0;
+    }
+    .box-1280.flex{
+        display: block;
+    }
+    
+    .search-top input[type=search]{
+        width: inherit;
+    }
+    .bottom-header,
+    .styleBon .itemnews:first-child .thumb{
+        height: inherit;
+    }
+    .main-menu,
+    .sp-daxem,
+    .sologan,
+    .ads-top,
+    .ads-content,
+    .ads-left,
+    .home-cate-main .left,
+    .menu-footer,
+    .main_content .rightprimary{
+        display: none;
+    }
+    .bottom-header{
+        padding: 0;
+    }
+    .basket-page{
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .contact-top{
+        margin-left: 15px;
+    }
+    .chung-nhan,
+    .category.detail .styleBon,
+    .styleBon .itemnews:first-child{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+   
+    }
+    .chung-nhan > div{
+        width: 48%;
+        margin: 0.5% 1%;
+    }
+    .partner{
+        width: 95%;
+        height: auto;
+        margin: 30px auto 20px;
+        padding: 5px 50px 10px;
+    }
+    .wrapt-item-02{
+        width: 29%;
+        margin: 3% 2%;
+    }
+    .home-cate-header{
+        margin-top: 15px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
+    .home-cate-header button{
+        display: none;
+    }
+    .footer-content .box-1280{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .footer-content > div > div{
+        width: 49%;
+    }
+    .footer-bottom,
+    .copyright{
+        text-align: center;
+    }
+    .footer-bottom > div > div:first-child,
+    .footer-bottom > div > div:nth-child(2),
+    .footer-bottom > div > div:last-child{
+        width: 100%;
+    }
+    .footer-bottom > div > div:last-child > ul,
+    .footer-call,
+    .copyright  ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    /*============= End Home =============*/
+    /*============= Detail =============*/
+    .bread-crumb .button{
+        display: none;
+    }
+    .detail-item-box{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .item-center,
+    .detail-item-info .left,
+    .form-danhgia .comment_bottom{
+        width: 100%;
+    }
+    .detail-item-info .right{
+        display: none;
+    }
+    .item-img{
+        width: 355px;
+    }
+    .item-info{
+        width: calc(100% - 370px)
+    }
+    
+    .item-center >div{
+        height: inherit;
+    }
+    .tabs-sp h2{
+        font-size: 14px;
+    }
+    .tabs-sp input:checked + label h2{
+        font-weight: bold;
+    }
+    .tabs-slider-detail .wrapt-item-02{
+        width: 65%;
+    }
+    .detail-item-title h1{
+        line-height: 30px;
+    }
+    .form-danhgia .input-triple input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .detail-table .bottom > div:first-child p span,
+    .detail-table .bottom > div:first-child h5 span{
+        width: 135px;
+    }
+    .detail-item-title{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .detail-item-title h1{
+        width: 100%;
+        font-size: 24px;
+    }
+    .detail-item-title h1 span{
+        margin-left: 0;
+    }
+    .detail-item-title h1 > span{
+        display: block;
+        margin-left: 0;
+    }
+    .gallery-thumbs{
+        display: none;
+    }
+    .item-img .swiper-container{
+        
+    }
+     .item-img .swiper-container .swiper-slide img{
+        width: 100%;
+    }
+    .item-info{
+        padding-top: 15px;
+    }
+    /*============= End Detail =============*/
+    /*============= Home Cate =============*/
+    .home-cate-main{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .home-cate .left{
+        display: block;
+        width: 100%;
+    }
+    .fillter .fillter-select:nth-child(1){
+        padding-top: 15px;
+    }
+    .fillter-select{
+        padding: 0px 10px 5px;
+    }
+    .fillter-select-title .drop-menu{
+        display: block;
+    }
+    .fillter-select-wrapt.drop-item{
+        display: none;
+    }
+    .fillter-select-title{
+        border-bottom: none;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .fillter{
+
+    }
+    .main-sub .fa-filter{
+        top: -18px;
+        right: 0;
+        z-index: 4;
+    }
+    .main-sub .sub{
+        display: none;
+    }
+    .fillter-box .fa-filter:after{
+        content: 'Bộ lọc';
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .right .home-cate-header{
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+    }
+    .right .home-cate-header:not(.bottom) > p:nth-child(2){
+        text-align: right;
+    }
+    .right .home-cate-header h1,
+    .right .home-cate-header > p{
+        width: 50%;
+    }
+    /*============= End Home Cate =============*/
+/*
+    .wrap-page, .leftprimary, .home_slide, .home_hotnew, .hot_video_box, .hot_video_comment, .hot_video_more, .video_thumb, .styleMot .itemnews-box .itemnews:first-child, .styleMot .itemnews-box .itemnews, .styleBa .itemnews-box .itemnews:first-child, .styleBa .itemnews-box .itemnews:nth-child(2), .styleBa .itemnews-box .itemnews:nth-child(3), .styleBa .itemnews-box .itemnews, .videostyle .itemnews-box .itemnews:first-child, .half, .leftfooter, .rightfooter, .detail_content .thumb, .content_recoment .thumb, .content_recoment .content_text, .category_box{
+        width: 100%;
+    }
+*/  
+    .hot_video, .video_thumb, 
+    .hotnew_img, 
+    .half .itemnews-box .itemnews:first-child .thumb, 
+    .styleMot .itemnews-box .itemnews:first-child .thumb, 
+    .videostyle .itemnews-box .itemnews:first-child .thumb, 
+    .videostyle .itemnews-box .itemnews .thumb, 
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3), 
+    .styleBa .itemnews-box .itemnews:first-child .thumb, 
+    .styleBa .itemnews-box .itemnews:nth-child(2) .thumb, 
+    .styleBa .itemnews-box .itemnews:nth-child(3) .thumb, 
+    .styleBon, .detail_content .thumb, .content_recoment .thumb, 
+    .styleBon .hotnew_content{
+        height: inherit;
+    }
+    
+    .styleBa .itemnews-box .itemnews:first-child, 
+    .styleBa .itemnews-box .itemnews:nth-child(2), 
+    .styleBa .itemnews-box .itemnews:nth-child(3){
+        max-height: inherit;
+    }
+    .screenprimary{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .home_hotnew{
+        margin-top: 10px;
+    }
+    .home_hotnew,
+    .styleBa .itemnews-box .itemnews:nth-child(2){
+        margin-left: 0;    
+    }
+    .text-content h3{
+        margin-top: 0;
+    }
+    .cate-item{
+        display: none;
+    }
+    .text-content h3 a{
+        font-size: 14px;
+    }
+    /*============= Tra cuu don hang =============*/
+    .tracuudh{
+        width: 100%;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .input-triple,
+    .input-double {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .input-triple input,
+    .input-double select{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /*============= End Mua ngay =============*/
+    /*============= Khoa add new style 14-09-2017 =============*/
+    .wrapt-item-02 .item-content h5 a{
+        display: inline-block;
+    }
+    .item-content h5 span{
+        display: block;
+    }
+    .chung-nhan{
+        display: none;
+    }
+    .tabs-sp > div > div > div{
+       padding: 0;
+    }
+    /*============= End Khoa add new style 14-09-2017 =============*/
+}
+@media screen and (max-width:650px){
+    .item-img,
+    .item-info,
+    .detail-table .bottom > div .btn-muangay{
+        width: 100%;
+    }
+    .btn-danhgia{
+        height: auto;
+        padding: 3px 2px;
+    }
+    #image-gallery .lslide img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:609px){
+    /*============= Home =============*/
+    .wrapt-item-02{
+        width: 46%;
+    }
+    .item-content h4{
+        min-height: 55px;
+    }
+    .copyright ul{
+        margin-top: 5px;
+    }
+    /*============= End Home =============*/
+    /*============= Tra cuu don hang =============*/
+    .tracuu-sp > div,
+    .tracuu-sp > div:last-child{
+        width: 20%;
+    }
+    .tracuu-sp h5 span{
+        display: block;
+    }
+    .tracuu-content form h3{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .tracuu-content form h3 span{
+        margin-top: 5px;
+        width: 100%;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .total-price{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .total-price >div:first-child,
+    .total-price >div{
+        width: 100%;
+    }
+    .tracuu-thanhtien p, 
+    .total-price >div:last-child p{
+        margin-right: 0;
+    }
+    .total-price >div:last-child p{
+        text-align: left;
+    }
+    .total-price >div:last-child .phi-tong{
+        text-align: right;
+    }
+    .total-price >div:last-child p span{
+        width: 180px;
+    }
+    .phi-vc{
+        margin-top: 10px;
+    }
+    /*============= End Mua ngay =============*/
+    .styleNam .itemnews .text-content .shortcontent{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    /*============= Home =============*/
+    .chung-nhan > div{
+        width: 100%;
+    }
+    .home-cate-header h1{
+        line-height: 20px;
+    }
+    .home-cate-header button{
+        width: 200px;
+    }
+    .partner{
+        padding: 5px 20px 10px;
+    }
+    .footer-about figure,
+    .footer-content h3{
+        margin-bottom: 0;
+    }
+    .footer-content{
+        text-align: center;
+    }
+    .footer-content > div > div{
+        width: 100%;
+    }
+    .tabs-sp h2{
+        font-size: 12px;
+    }
+    .tabs-sp label,
+    .tabs-sp label[for*='3']{
+        padding: 5px 10px;
+    }
+    .tabs-sp label[for*='3']:after{
+        content: none;
+    }
+    .tabs-sp #tab1:checked ~ #content1, 
+    .tabs-sp #tab2:checked ~ #content2, 
+    .tabs-sp #tab3:checked ~ #content3{
+        background: #efeded;
+    }
+    /*============= End Home =============*/
+    /*============= Detail =============*/
+    .btn-muangay p{
+        font-size: 18px;
+    }
+    .detail-table-info > div > p:first-child{
+        width: 140px;
+    }
+    .detail-item-danhgia{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .detail-item-danhgia h3{
+        width: 100%;
+    }
+    .detail-item-danhgia .btn-danhgia,
+    .detail-item-danhgia .btn-cancel{
+        margin-top: 15px;
+    }
+    .detail-item-danhgia .btn-danhgia:before{
+        content: none;
+    }
+    /*============= End Detail =============*/
+    /*============= Home Cate =============*/
+    .right .home-cate-header h1{
+        margin-bottom: 8px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .right .home-cate-header h1, 
+    .right .home-cate-header > p{
+        width: 100%;
+    }
+    .right .home-cate-header > p,
+    .right .home-cate-header:not(.bottom) > p:nth-child(2){
+        text-align: left;
+        font-size: 14px;
+    }
+    .pagination-style{
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    .right .home-cate-header.bottom  .pagination-style{
+        top: 0;
+    }
+    /*============= End Home Cate =============*/
+    /*============= Tra cuu don hang =============*/
+    .tracuu-sp{
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .tracuu-sp > div:first-child{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .tracuu-sp > div:nth-child(2),
+    .tracuu-sp > div:last-child{
+        width: 50%;
+        text-align: right;
+    }
+    .tracuu-input{
+        width: 100%;
+    }
+    .tracuu-input input{
+        width: calc(100% - 125px);
+    }
+    .logo-tracuu img{
+        width: 70%;
+    }
+    .info-customer p{
+        font-weight: 300;
+        line-height: 1.5em;
+        margin-bottom: 10px;
+    }
+    .info-customer p span{
+        display: block;
+        font-weight: bold;
+        width: 100%;
+    }
+    /*============= End Tra cuu don hang =============*/
+    /*============= Mua ngay =============*/
+    .tracuudh .btn-muangay{
+        width: 100%;
+    }
+    /*============= End Mua ngay =============*/
+    .styleNam .itemnews .thumb{
+        width: 190px;
+    }
+    .styleNam .itemnews .text-content .subcontent{
+        display: none;
+    }
+    .wrapt-item-02 .item-content h4{
+        height: 75px; color:#000;
+    }
+    /*============= Khoa add new style 14-09-2017 =============*/
+    .tabs-sp .swiper-slide{
+        min-height: 150px;
+        height: inherit;
+    }
+    .tabs-sp .wrapt-item-01{
+        display: block;
+        text-align: center;
+    }
+    .tabs-sp .wrapt-item-01 figure{
+        width: 70%;
+        margin: auto;
+    }
+    .tabs-sp .item-content{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    /*============= End Khoa add new style 14-09-2017 =============*/
+}
+@media screen and (max-width:412px){
+    .detail-table .bottom > div{
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width:360px){
+    .tabs-slider-detail .swiper-slide figure, .swiper-slide figure img{
+        width: auto;
+    }
+    .styleNam .itemnews{
+        margin-bottom: 15px;
+    }
+    .styleNam .itemnews .text-content{
+        width: calc(100% - 130px);
+    }
+    .styleNam .itemnews .thumb{
+        width: 120px;
+    }
+}
+@media screen and (max-width:320px){
+    .btn-muangay{
+        padding: 5px;
+    }
+    .btn-muangay span{
+        font-size: 12px;
+    }
+    .btn-muangay p {
+        font-size: 14px;
+    }
+    .tabs-sp label,
+    .tabs-sp label[for*='3']{
+        padding: 5px;
+    }
+    .wrapt-item-02:hover .btnmuangaylist{font-size: 12px;}
+}
+/*============= Khoa add new style 14-09-2017 =============*/
+.rd-mobilepanel_toggle.active{
+    left: 240px;
+}
+.rd-mobilemenu_ul{
+    top: -120px;
+    background: #fff;
+}.rd-mobilemenu_ul li{
+    border-bottom: 1px solid #f4f4f4;
+}
+.rd-mobilemenu_ul a{
+    color: #555;
+}
+.rd-mobilemenu_ul a .rd-submenu-toggle,
+.rd-mobilemenu_ul a .rd-submenu-toggle:hover{
+    background: transparent;
+    color: #555;
+}
+/*============= End Khoa add new style 14-09-2017 =============*/
