@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "ez"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ez"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ez"
+        }
+    }
+}
