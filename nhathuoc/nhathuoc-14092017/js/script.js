@@ -249,6 +249,19 @@ $(document).ready(function(){
             event.preventDefault();
         });
     });
+    /* Scroll fix main menu 
+    ========================================================*/
+    $(window).bind('scroll', function () {
+        if ($(this).scrollTop() > 22) {
+            $('.bottom-header').addClass("mfixed");
+            $('.bread-crumb ul').addClass("mfixed");
+            $('.banner').addClass("mfixed");
+        } else {
+            $('.bottom-header').removeClass("mfixed");
+            $('.bread-crumb ul').removeClass("mfixed");
+            $('.banner').removeClass("mfixed");
+        }
+    });
     /* Rate star
     ========================================================*/
 //    $(document).ready(function(){

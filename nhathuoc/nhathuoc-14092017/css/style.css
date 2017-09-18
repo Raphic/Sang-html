@@ -70,6 +70,7 @@ input, select{
     width: 100%;
     height: 75px;
     position: relative;
+    background: #fff;
     z-index: 1;
     -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
@@ -2289,15 +2290,30 @@ p.call-sp span{
 /*        width: calc(100% - 960px);*/
     }
     .banner-slider{
-        width: calc(100% - 580px);
+        width: calc(100% - 560px);
     }
     .banner-slider .swiper-container{
         height: calc(100% - 120px);
     }
     .wrapt-item-02{
-        margin: 0 10px 25px;
+/*        margin: 0 10px 25px;*/
+        width: 227px;
+    }
+    .item-img{
+        width: 30%;
+    }
+    .item-info{
+        width: 32%;
+    }
+    .item-center{
+        width: 35%;
+    }
+    .scroll-show-binhluan > div{
+        width: 1024px;
     }
 }
+
+/*============= Khoa add new style 14-09-2017 =============*/
 .banner{
     margin: 0;
     padding: 15px 15px 0;
@@ -2310,3 +2326,79 @@ p.call-sp span{
 .tabs-sp{
     background: #F9F9F7;
 }
+.sp-lienquan .wrapt-item-02{
+    border: none;
+}
+/********* Call back *********/
+.block-call-for-customer {
+    width: 100%;
+    padding: 6px 10px 10px 10px;
+    margin-top: 10px;
+    background-color: #22934e;
+    border-radius: 4px;
+    position: relative;
+}
+.block-call-for-customer > h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.block-call-for-customer > .text-customer-name,
+.block-call-for-customer > .text-number-phone{
+    border: 0;
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+    padding: 1px 5px 1px 5px;
+    margin-top: 3px;
+    width: calc(100% - 70px);
+    height: 23px;
+    display: none;
+}
+.block-call-for-customer > .text-number-phone {
+    margin-top: 3px;
+    display: block;
+}
+.block-call-for-customer > .btn-sent-number-phone {
+    width: 66px;
+    height: 24px;
+    border: 0;
+    background-color: #F15A22;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 9px;
+    right: 10px;
+    -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+/********* Fixed menu *********/
+.scroll-show-binhluan{
+    top: 75px;
+}
+.bottom-header.mfixed{
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+.banner.mfixed{
+    margin-top: 80px;
+}
+.bread-crumb ul.mfixed .button{
+    position: fixed;
+    top: 27px;
+    z-index: 99999;
+}
+.bread-crumb ul.mfixed + .detail-menu.drop-item.active{
+    position: fixed;
+    z-index: 99999;
+    top: 75px;
+}
+.bread-crumb ul. li{
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/*============= End Khoa add new style 14-09-2017 =============*/

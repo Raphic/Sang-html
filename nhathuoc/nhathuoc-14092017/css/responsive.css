@@ -33,7 +33,7 @@
     }
     
     .scroll-show-binhluan{
-        z-index: -999999;
+/*        z-index: -999999;*/
     }
     .logo{
         position: fixed;
@@ -211,8 +211,7 @@
         padding: 5px 50px 10px;
     }
     .wrapt-item-02{
-        width: 29%;
-        margin: 3% 2%;
+        width: 33.33%;
     }
     .home-cate-header{
         margin-top: 15px;
@@ -468,6 +467,9 @@
     .tabs-sp > div > div > div{
        padding: 0;
     }
+    .scroll-show-binhluan {
+        top: 55px;
+    }
     /*============= End Khoa add new style 14-09-2017 =============*/
 }
 @media screen and (max-width:650px){
@@ -488,7 +490,7 @@
 @media screen and (max-width:609px){
     /*============= Home =============*/
     .wrapt-item-02{
-        width: 46%;
+        width: 50%;
     }
     .item-content h4{
         min-height: 55px;
@@ -723,6 +725,12 @@
     .styleNam .itemnews .thumb{
         width: 120px;
     }
+    .tabs-sp label, .tabs-sp label[for*='3']{
+        padding: 5px 7px;
+    }
+    .tabs-sp h2 {
+        font-size: 11px;
+    }
 }
 @media screen and (max-width:320px){
     .btn-muangay{
@@ -738,7 +746,10 @@
     .tabs-sp label[for*='3']{
         padding: 5px;
     }
-    .wrapt-item-02:hover .btnmuangaylist{font-size: 12px;}
+    .wrapt-item-02:hover .btnmuangaylist{
+        font-size: 12px;
+    }
+
 }
 /*============= Khoa add new style 14-09-2017 =============*/
 .rd-mobilepanel_toggle.active{

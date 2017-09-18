@@ -198,8 +198,107 @@
                                 <p>MUA NGAY</p>
                                 <span>(Thanh toán khi nhận hàng, không thích không nhận)</span>
                             </button>
+                            <div class="block-call-for-customer">
+                                <h4>GỌI LẠI CHO TÔI</h4>
+                                <input type="text" id="txt-customer-name-1" class="text-customer-name" placeholder="Họ và tên">
+                                <input type="text" id="txt-number-phone-1" class="text-number-phone" placeholder="Để lại số điện thoại, chúng tôi gọi lại ngay">
+                                <input type="button" data-vale="1" id="btn-sent-number-phone-1" class="btn-sent-number-phone" value="GỬI">
+                                <div class="clearfix"></div>
+                            </div>
                             <p class="call-sp">Gọi hỗ trợ <span>0918 212 888</span> (Tư vấn miễn phí)</p>
                         </div>
+                        <script>
+                            $(document).ready(function () {
+                                $("#txt-number-phone-1").focusin(function () {
+                                    $(this).parent().children("h4").hide();
+                                    $("#txt-customer-name-1").show();
+                                    $("#btn-sent-number-phone-1").css("height", "50px");
+                                    if ($("#txt-customer-name-1").val().trim() == "") {
+                                        $("#txt-customer-name-1").focus();
+                                    }
+                                });
+                                $("#btn-sent-number-phone-1").click(function () {
+                                    callForCustomer($(this).attr("data-vale"));
+                                });
+                            });
+
+                            function showResult(val) {
+                                if (parseInt(val) == 1) {
+                                    displayBarNotification("Vui lòng chờ máy, chúng tôi sẽ gọi lại ngay!", 'success', 5000);
+                                }
+                                if (parseInt(val) == 0) {
+                                    displayBarNotification("Đã có lỗi xảy ra!", 'error', 5000);
+                                }
+                            }
+
+                            function callForCustomer(key)
+                            {
+                                var message = "";
+                                if ($("#txt-customer-name-" + key).val().trim() == "")
+                                {
+                                    if (message == "")
+                                        message = "Vui lòng nhập họ và tên";
+                                    else
+                                        message += "<br />Vui lòng nhập tên";
+                                }
+                                if ($("#txt-number-phone-" + key).val().trim() == "") {
+                                    if (message == "")
+                                        message = "Vui lòng nhập số điện thoại";
+                                    else
+                                        message += "<br />Vui lòng nhập số điện thoại";
+                                }
+                                if ($("#txt-number-phone-" + key).val().trim() != "") {
+                                    if (!$.isNumeric($("#txt-number-phone-" + key).val().trim())) {
+                                        if (message == "")
+                                            message = "Số điện thoại phải là các số từ (0 - 9)";
+                                        else
+                                            message += "<br />Số điện thoại phải là các số từ (0 - 9)";
+                                    }
+                                }
+
+                                if (message != "") {
+                                    displayBarNotification(message, 'error', 5000);
+                                    return false;
+                                }
+
+                                var postData = {
+                                    fullName: $("#txt-customer-name-" + key).val(),
+                                    phone: $("#txt-number-phone-" + key).val(),
+                                    ProductId: $("#hidProductID").val()
+                                };
+                                addAntiForgeryToken(postData);
+                                $.ajax({
+                                    cache: false,
+                                    url: "/Product/CallForCustomer",
+                                    type: 'POST',
+                                    data: postData,
+                                    dataType: 'json',
+                                    beforeSend: function () {
+                                        $("#btn-sent-number-phone-" + key).prop('disabled', true);
+                                        $("#txt-number-phone-" + key).prop('disabled', true);
+                                        $("#txt-customer-name-" + key).prop('disabled', true);
+                                    },
+                                    complete: function(){
+                                        $("#btn-sent-number-phone-" + key).prop('disabled', false);
+                                        $("#txt-number-phone-" + key).prop('disabled', false);
+                                        $("#txt-customer-name-" + key).prop('disabled', false);
+                                        $("#txt-customer-name-" + key).hide();
+                                        $("#txt-customer-name-" + key).parent().children("h4").show();
+                                        $("#btn-sent-number-phone-" + key).removeAttr("style");                
+                                    },
+                                    success: function (sp) {
+                                        showResult(sp.rs);
+                                        if (sp.rs == 1) {
+                                            $("#txt-number-phone-" + key).val("");
+                                            $("#txt-customer-name-" + key).val("");                   
+                                        }
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        alert(errorThrown);
+                                    }
+                                });
+                            }
+                        </script>
                         <!--Item info---------------------------------------------------- END -->
                         <!--Item cennter------------------------------------------------------>
                         <div class="item-center">
