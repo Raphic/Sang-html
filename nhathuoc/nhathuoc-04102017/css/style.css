@@ -182,7 +182,6 @@ input, select{
 }
 
 .main-menu{
-    padding: 10px 0 0;
     position: relative;
     background: #fff;
 }
@@ -2489,25 +2488,28 @@ p.call-sp span{
     background: #000;
 }
 
-.new-topmenu > ul.flex{
+.new-topmenu{
+    padding: 0 15px;
+}
+.new-topmenu > div > ul.flex{
     width: calc(100% - 276px);
     color: #000;
     position: relative;
 }
-.new-topmenu > ul.flex > li{
+.new-topmenu > div > ul.flex > li{
     margin-right: 30px;
     height: 100%;
     font-weight: bold;
 }
-.new-topmenu > ul.flex > li > a{
+.new-topmenu > div > ul.flex > li > a{
     color: #000;
     line-height: 50px;
 }
-.new-topmenu > ul.flex > .curent > a,
-.new-topmenu > ul.flex > li > a:hover{
+.new-topmenu > div > ul.flex > .curent > a,
+.new-topmenu > div > ul.flex > li > a:hover{
     color: #f7941d;
 }
-.new-topmenu > ul.flex li:hover .menu-sub{
+.new-topmenu > div > ul.flex li:hover .menu-sub{
     display: block;
 }
 .new-topmenu .menu-sub{
@@ -2553,5 +2555,21 @@ p.call-sp span{
     color: #7e7e7e;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+.menu_label.mfixed{
+    position: fixed;
+    top: 10px;
+    z-index: 99999;
+}
+.banner.mfixed .main-menu{
+    display: none;
+}
+.banner.mfixed .banner-slider{
+    margin-left: 256px;
+}
+.bottom-header.mfixed{
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.12);
 }
 /*============= End Khoa add new style 04-10-2017 =============*/

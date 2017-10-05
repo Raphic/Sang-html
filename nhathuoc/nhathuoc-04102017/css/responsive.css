@@ -472,6 +472,25 @@
     }
     /*============= End Khoa add new style 14-09-2017 =============*/
 }
+/*============= Khoa add new style 05-10-2017 =============*/
+@media screen and (max-width:1024px){
+    .new-topmenu,
+    .breadcrumb-right{
+        display: none !important;
+    }
+    .home-cate-header h1{
+        text-align: center;
+        width: 100%;
+    }
+    .rd-mobilemenu_submenu .flex{
+        display: block;
+    }
+    .menu-sub-title{
+        margin-bottom: 0;
+        padding: 5px 0 5px 35px;
+    }
+}
+/*============= End Khoa add new style 05-10-2017 =============*/
 @media screen and (max-width:650px){
     .item-img,
     .item-info,
@@ -566,9 +585,11 @@ border-top:0!important;
     .chung-nhan > div{
         width: 100%;
     }
+/*
     .home-cate-header h1{
         line-height: 20px;
     }
+*/
     .home-cate-header button{
         width: 200px;
     }

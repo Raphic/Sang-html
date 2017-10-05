@@ -93,73 +93,24 @@ $(document).ready(function(){
             }
         }
     });
-    
-//    var galleryTop = new Swiper('.gallery-top', {
-//        spaceBetween: 5,
-//        loop:true,
-//        loopedSlides: 5,
-//    });
-//    var galleryThumbs = new Swiper('.gallery-thumbs', {
-//        spaceBetween: 5,
-//        slidesPerView: 5,
-//        touchRatio: 0.2,
-//        loop:true,
-//        loopedSlides: 5,
-//        slideToClickedSlide: true
-//    });
-//    galleryTop.params.control = galleryThumbs;
-//    galleryThumbs.params.control = galleryTop;
-//    
-//    var swiper = new Swiper('.home_slide', {
-//        pagination: '.swiper-pagination',
-//        paginationClickable: true,
-//        spaceBetween: 20,
-//        centeredSlides: true,
-//        autoplay: 4500,
-//        autoplayDisableOnInteraction: true
-//    });  
-//        $(function () {
-//            SyntaxHighlighter.all();
-//        });
-//        $(window).load(function () {
-//            $('#carousel').flexslider({
-//                animation: "slide"
-//                , controlNav: false
-//                , animationLoop: false
-//                , slideshow: false
-//                , itemWidth: 210
-//                , itemMargin: 5
-//                , asNavFor: '#slider'
-//            });
-//            $('#slider').flexslider({
-//                animation: "slide"
-//                , controlNav: false
-//                , animationLoop: false
-//                , slideshow: false
-//                , sync: "#carousel"
-//                , start: function (slider) {
-//                    $('body').removeClass('loading');
-//                }
-//            });
-//        });
-        $(document).ready(function () {
-            $("#content-slider").lightSlider({
-                loop: true
-                , keyPress: true
-            });
-            $('#image-gallery').lightSlider({
-                gallery: true
-                , item: 1
-                , thumbItem: 5
-                , slideMargin: 0
-                , speed: 500
-                , auto: true
-                , loop: true
-                , onSliderLoad: function () {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }
-            });
+    $(document).ready(function () {
+        $("#content-slider").lightSlider({
+            loop: true
+            , keyPress: true
         });
+        $('#image-gallery').lightSlider({
+            gallery: true
+            , item: 1
+            , thumbItem: 5
+            , slideMargin: 0
+            , speed: 500
+            , auto: true
+            , loop: true
+            , onSliderLoad: function () {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+    });
     /* Drop item 
     ========================================================*/
     (function ($) {
@@ -201,6 +152,11 @@ $(document).ready(function(){
         $('.main-sub .main-show').click(function(e) {
             $('.main-sub .sub').slideToggle(400);
             $('.sub').toggleClass('active');
+            e.stopPropagation();
+        });
+        $('.menu_label.mfixed').click(function(e) {
+            $('.banner.mfixed .main-menu').slideToggle(400);
+            $('.main-menu').toggleClass('active');
             e.stopPropagation();
         });
     });
@@ -252,14 +208,18 @@ $(document).ready(function(){
     /* Scroll fix main menu 
     ========================================================*/
     $(window).bind('scroll', function () {
-        if ($(this).scrollTop() > 22) {
+        if ($(this).scrollTop() > 150) {
             $('.bottom-header').addClass("mfixed");
             $('.bread-crumb ul').addClass("mfixed");
             $('.banner').addClass("mfixed");
+            $('.menu_label').addClass("mfixed");
+            $('.logo').css("opacity", "0");
         } else {
             $('.bottom-header').removeClass("mfixed");
             $('.bread-crumb ul').removeClass("mfixed");
             $('.banner').removeClass("mfixed");
+            $('.menu_label').removeClass("mfixed");
+            $('.logo').css("opacity", "1");
         }
     });
     /* Rate star
