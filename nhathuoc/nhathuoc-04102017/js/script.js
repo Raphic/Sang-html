@@ -154,10 +154,10 @@ $(document).ready(function(){
             $('.sub').toggleClass('active');
             e.stopPropagation();
         });
-        $('.menu_label.mfixed').click(function(e) {
-            $('.banner.mfixed .main-menu').slideToggle(400);
-            $('.main-menu').toggleClass('active');
-            e.stopPropagation();
+        $('.menu_label').click(function(a) {
+            $('.main-menu.mfixed > ul').toggleClass('active');
+            $('.detail-menu-page .main-menu > ul').toggleClass("show");
+            a.stopPropagation();
         });
     });
     /* Rate button show 
@@ -212,49 +212,21 @@ $(document).ready(function(){
             $('.bottom-header').addClass("mfixed");
             $('.bread-crumb ul').addClass("mfixed");
             $('.banner').addClass("mfixed");
-            $('.menu_label').addClass("mfixed");
+            $('.main-menu').addClass("mfixed");
             $('.logo').css("opacity", "0");
+            $('.detail-menu-page').addClass("mfixed");
         } else {
             $('.bottom-header').removeClass("mfixed");
             $('.bread-crumb ul').removeClass("mfixed");
             $('.banner').removeClass("mfixed");
-            $('.menu_label').removeClass("mfixed");
+            $('.main-menu').removeClass("mfixed");
             $('.logo').css("opacity", "1");
+            $('.main-menu ul').removeClass("active");
+            $('.detail-menu-page').removeClass("mfixed");
         }
     });
     /* Rate star
     ========================================================*/
-//    $(document).ready(function(){
-//        /* 1. Visualizing things on Hover - See next part for action on click */
-//        $('#stars li').on('mouseover', function(){
-//            var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
-//            $(this).parent().children('li.star').each(function(e){
-//                if (e < onStar) {
-//                    $(this).addClass('hover');
-//                }
-//                else {
-//                    $(this).removeClass('hover');
-//                    }
-//                });
-//            }).on('mouseout', function(){
-//            $(this).parent().children('li.star').each(function(e){
-//                    $(this).removeClass('hover');
-//                });
-//            });
-//            /* 2. Action to perform on click */
-//            $('#stars li').on('click', function(){
-//                var onStar = parseInt($(this).data('value'), 10); // The star currently selected
-//                var stars = $(this).parent().children('li.star');
-//                for (i = 0; i < stars.length; i++) {
-//                $(stars[i]).removeClass('selected');
-//                }
-//                for (i = 0; i < onStar; i++) {
-//                    $(stars[i]).addClass('selected');
-//                }
-//            });
-//            /* 3. Add tooltip */
-//            
-//        });
     $('#stars li').on('mouseover', function(){
       /* 1. Add tooltip */
       var $spanRate = $("span.rate");

@@ -31,7 +31,6 @@
     .mb{
         display: block;
     }
-    
     .scroll-show-binhluan{
 /*        z-index: -999999;*/
     }
@@ -46,6 +45,7 @@
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
         z-index: 99999992;
         text-align: left;
+        opacity: 1 !important;
     }
     .logo img{
         width: 160px;
