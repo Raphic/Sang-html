@@ -73,7 +73,7 @@ $(document).ready(function(){
         prevButton: '.swiper-button-prev',
         slidesPerView: 4,
         paginationClickable: true,
-        spaceBetween: 15,
+        spaceBetween: 0,
         breakpoints: {
             1024: {
                 slidesPerView: 4,

@@ -287,9 +287,11 @@
     .tabs-sp input:checked + label h2{
         font-weight: bold;
     }
+/*
     .tabs-slider-detail .wrapt-item-02{
         width: 65%;
     }
+*/
     .detail-item-title h1{
         line-height: 30px;
     }

@@ -82,11 +82,8 @@ input, select{
     width:234px;
 }
 .search-top{
-/*    width: 525px;*/
     height: 40px;
-/*    border: 1px solid #dfdfdf;*/
     border-radius: 3px;
-    margin-top: 11px;
 }
 .search-top .warp-search{
     position: relative;
@@ -148,7 +145,12 @@ input, select{
 */
 }
 .basket-page{
+    margin-top: 5px;
 /*    width: 405px;*/
+}
+.basket-page a{
+    color: #bcbcbc;
+    font-size: 13px;
 }
 .basket-page > div > figure{
     margin-right: 5px;
@@ -198,7 +200,9 @@ input, select{
 }
 .main-menu > ul > li >a.current,
 .main-menu > ul > li >a:hover{
-    color: #42c5e4;
+    color: #333e48;
+    background-color: #f5f5f5;
+    font-weight: 700;
 }
 /*================= Menu lv2 ======================*/
 .main-menu ul li:hover .menu-sub{
@@ -2300,10 +2304,9 @@ p.call-sp span{
     line-height: 50px;
 /*    border-bottom: 1px solid #e2e2e2;*/
     background: #f7941d;
-    color: #fff;
+    color: #333e48;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    text-transform: uppercase;
 }
 
 .hotline a {
@@ -2368,7 +2371,14 @@ p.call-sp span{
 	/*background:red*/
 }
 .sp-lienquan .wrapt-item-02{
-    border: none;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+}
+.sp-lienquan .wrapt-item-02{
+    border-right: none;
+}
+.sp-lienquan .wrapt-item-02:last-child{
+    border-right: 1px solid #dfdfdf;
 }
 /********* Call back *********/
 .block-call-for-customer {
@@ -2498,7 +2508,6 @@ p.call-sp span{
 .new-topmenu > div > ul.flex > li{
     margin-right: 30px;
     height: 100%;
-    font-weight: bold;
 }
 .new-topmenu > div > ul.flex > li > a{
     color: #000;
@@ -2634,5 +2643,24 @@ p.call-sp span{
 .detail-menu-page.mfixed .new-topmenu .main-menu .menu-sub,
 .detail-menu-page.mfixed .new-topmenu .main-menu ul.show .menu-sub{
     top: 0;
+}
+.have-sub > a:after{
+    font-family: FontAwesome;
+    content: "\f105";
+    color: #aeaeae;
+    font-size: 1.214em;
+    font-weight: bold;
+    margin-right: 15px;
+    float: right;
+}
+.main-menu > ul{
+    padding: 0 10px;
+}
+.banner-slider,
+.chung-nhan{
+    margin-top: 5px;
+}
+.swiper-slide figure, .swiper-slide figure img{
+    width: inherit;
 }
 /*============= End Khoa add new style 04-10-2017 =============*/
