@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import "../css/swiper.min.css";
+@import "../css/responsive/priority-nav-core.css";
+@import "../css/responsive/main.css";
+@import "../css/responsive/normalize.css";
+@import "../css/responsive/component.css";
 @import "../css/reset.css";
 
 @charset "utf-8";
@@ -22,10 +26,7 @@ html, body {
 body{
 /*    background: rgba(96,19,3,1);*/
 }
-.box{
-    width: 1200px;
-    margin: auto;
-}
+
 .sub-text{
     font-size: 12px;
     font-weight: 300;
@@ -141,9 +142,14 @@ input,textarea,select{
     background: url(../images/icon-menu.png) center center;
     vertical-align: -6px;
 }
+.main-menu a:hover,
+.main-menu a:focus{
+    text-decoration: underline;
+}
 /***************** Content ********************/
 .content{
-    padding: 35px 40px 90px;
+/*    padding: 35px 40px 90px;*/
+    padding: 35px 0 90px;
     background:  rgba(96,19,3,1) url(../images/bg-content.png) repeat-x;
 }
 .content .title-top{
@@ -154,20 +160,24 @@ input,textarea,select{
     
 }
 .slider-home .left{
+    width: 53%;
+}
+.slider-home .left .slider-01{
+    width: 100%;
+    max-height: 450px;
     background: #2e0000;
-    width: 620px;
-    height: 450px;
     padding: 20px;
 }
 .slider-home .left img{
     width: 100%;
 }
 .slider-home .right{
+    width: 40%;
     
 }
 .slider-home .right .top{
-    width: 450px;
-    height: 359px;
+    width: 100%;
+    min-height: 359px;
     padding: 20px 25px;
     border-radius: 6px;
     border: solid 3px  #dc8528;
@@ -858,7 +868,11 @@ footer a {
     padding: 0 40px;
 }
 .slider-img{
+    width: 60%;
     position: relative;
+}
+.slider-img img{
+    width: 100%;
 }
 .slider-img .caption{
     width: 100%;
@@ -879,7 +893,8 @@ footer a {
 }
 
 .slider-text{
-    margin-left: 25px;
+    width: 38%;
+    margin-left: 2%;
     padding: 40px 15px 20px;
     background: #533b01 url(../images/bg-slider-text.png) no-repeat 25px 65px;
     text-align: justify;

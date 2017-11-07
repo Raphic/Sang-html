@@ -1,16 +1,126 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+.outer-nav a{
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+.outer-nav a .fa{
+    margin-right: 10px;
+    font-size: 30px;
+    min-width: 36px;
+}
+#showMenu{
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    background: rgba(123, 46, 0, 0.98);
+    color: #fff200;
+    border: solid 1px #ce9b59;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 3px 10px 1px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#showMenu:hover,
+#showMenu:focus{
+    border: solid 1px #fff;
+    color: #fff;
+}
+.box{
+    width: 1140px;
+    margin: auto;
+}
 /* 1200px 
 ----------------------------------------------------------*/
 @media only screen and (max-width: 1200px) {
-
+    .box {
+        width: 970px;
+    }
+    .title-04{
+        font-size: 30px;
+    }
+    .slider-text .author{
+        margin-top: 2em;
+    }
+    .slider-img .caption h1{
+        font-size: 30px;
+    }
+    .slider-img .caption p {
+        font-size: 18px;
+        margin-bottom: 0.5em;
+    }
+    .slider-text{
+        padding: 20px 15px 70px;
+    }
+    .slider-text .author + .btn{
+        font-size: 20px;
+        height: 50px;
+        line-height: 52px;
+    }
+}
+/* 1080px
+----------------------------------------------------------*/
+@media only screen and (max-width: 1080px) {
+    .box{
+        width: 750px;
+    }
+    .header .icon .logo{
+        min-width: 345px;
+    }
+    .header .icon img:not(:last-child) {
+        margin-right: 5px;
+    }
+    .header .menu-big{
+        padding: 15px 15px 25px 0;
+    }
+    .header .menu-big .bottom a{
+        margin-left: 10px;
+    }
+    
+    .slider-home .right .top{
+        min-height: 300px;
+    }
+    .box-img-child .img-warpt{
+        width: 70px;
+        height: 70px;
+    }
+    .img-warpt + p{
+        font-size: 10px;
+    }
+    /*========== Reset ==========*/
+    .btn{
+        font-size: 30px;
+        height: 50px;
+        line-height: 53px;
+    }
+    .btn-take{
+        height: 60px;
+        line-height: 62px;
+        font-size: 20px;
+    }
+    .btn-take:before{
+        width: 40px;
+        height: 45px;
+        background-size: contain;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .title-03{
+        font-size: 24px;
+    }
 }
 /* 992px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
-
+    .header .menu-big{
+        display: none;
+    }
+    #showMenu{
+        display: block;
+    }
 }
 /* 768px
 ----------------------------------------------------------*/

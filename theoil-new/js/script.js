@@ -42,3 +42,13 @@ var swiper = new Swiper('.slider-03 .swiper-container', {
     },
 });
 
+
+var wrapper = document.querySelector(".nav-wrapper");
+var nav = priorityNav.init({
+    mainNavWrapper: ".nav-wrapper", // mainnav wrapper selector (must be direct parent from mainNav)
+    mainNav: ".nav-ul", // mainnav selector. (must be inline-block)
+    navDropdownLabel: 'MORE <i class="fa fa-angle-double-down" aria-hidden="true"></i>',
+    navDropdownClassName: "nav__dropdown", // class used for the dropdown.
+    navDropdownToggleClassName: "nav__dropdown-toggle", // class used for the dropdown toggle.
+});
+
