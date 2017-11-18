@@ -1,0 +1,281 @@
+*, *before, *after{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+[hidden],
+template {
+    display: none
+}
+a {
+    background-color: transparent
+}
+a:active,
+a:hover {
+    outline: 0
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+    line-height: 1.4em;
+}
+abbr[title] {
+    border-bottom: 1px dotted
+}
+b,
+strong {
+    font-weight: 700
+}
+dfn {
+    font-style: italic
+}
+h1 {
+    margin: .67em 0;
+    font-size: 2em
+}
+mark {
+    color: #000;
+    background: #ff0
+}
+small {
+    font-size: 80%
+}
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+sup {
+    top: -.5em
+}
+sub {
+    bottom: -.25em
+}
+img {
+    border: 0
+}
+svg:not(:root) {
+    overflow: hidden
+}
+figure {
+/*    margin: 1em 40px*/
+    margin: 0;
+}
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+pre {
+    overflow: auto
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit
+}
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+input {
+    line-height: normal
+}
+input[type=checkbox],
+input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+input[type=search] {
+    -webkit-appearance: textfield
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver
+}
+legend {
+    padding: 0;
+    border: 0
+}
+textarea {
+    overflow: auto
+}
+optgroup {
+    font-weight: 700
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+td,
+th {
+    padding: 0
+}
+/*============================ Flex layout ============================*/
+.flex{
+    display: -webkit-box;    
+    display: -moz-box;       
+    display: -ms-flexbox;   
+    display: -webkit-flex;
+    display: flex;
+}
+.flex:after{
+    content: none;
+}
+.flex-center{
+    -webkit-align-items: center;
+   align-items: center;
+}
+.flex-align-end{
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+.flex-align-start{
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+.flex-align-center{
+    align-items: center;
+    -webkit-align-items: center;
+}
+.flex-justify-end{
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+.flex-justify-center{
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.flex-row-reverse{
+    flex-direction:row-reverse;
+    -webkit-flex-direction:row-reverse;
+}
+.flex-space-around{
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.flex-space-between{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+/*============================ Color ============================*/
+.color-cyan{
+    color: #3d3d3d;
+}
+.color-cyan1{
+    color: #ff0000;
+}
+.color-cyan2{
+    color: #3ec8eb;
+}
+.color-red{
+    color: #ec1848;
+}
+.color-gay{
+    color: #9b9b9b;
+}
+.color-gay1{
+    color:#333232;
+}
+.color-gay2{
+    color: #a7a7a7;
+}
+.color-black{
+    color: #000;
+}
+.color-black1{
+    color: #3d3d3d;
+}
+.color-white{
+    color: #fff;
+}
+.color-org{
+    color: #cbab0f;
+}
+.bg-01{
+    background: #efeded;
+}
