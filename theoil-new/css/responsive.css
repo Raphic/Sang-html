@@ -292,6 +292,7 @@
 /* 576px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
+    
     .header .icon{
         display: none;
     }
