@@ -258,6 +258,14 @@
         font-size: 54px;
     }
 
+    .checkout-box .table .tr > .td:first-child,
+    .checkout-box .table .tr > .td:nth-child(2){
+        width: inherit;
+    }
+    .checkout-box .table .tr > .td:nth-child(2){
+        margin-left: 10px;
+    }
+
     .flex > .btn.md{
         margin-bottom: 10px;
     }
@@ -275,6 +283,7 @@
     .prices-table tfoot td{
         text-align: center;
     }
+
 /*
     .checkout-box .table .tr > .td:first-child,
     .checkout-box .table .tr > .td:nth-child(2){
@@ -283,6 +292,7 @@
     .checkout-box .table .tr > .td:nth-child(2){
         margin-left: 10px;
     }
+
     .checkout-box{
         overflow-x: scroll;
     }
@@ -290,8 +300,7 @@
     .total-price{
         width: 675px;
     }
-*/
-}
+
 /* 576px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
