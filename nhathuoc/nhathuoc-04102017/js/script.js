@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     /* Menu Mobile 
     ========================================================*/
     
@@ -172,7 +173,7 @@ $(document).ready(function(){
             
             $('.drop-rate-form').addClass('show');
             $('.drop-rate-form').removeClass('hidden');
-            e.stopPropagation();
+            e.stopPropagation();            
         });
         $('.drop-rate .btn-cancel').click(function(e) {
             $(this).addClass('hidden');
@@ -265,9 +266,10 @@ $(document).ready(function(){
           }
           for (i = 0; i < onStar; i++) {
               $(stars[i]).addClass('selected');
-          }
-      });
+        }
     });
+    event.stopPropagation();
+});
 
 function openpopupinfo(){$('.wrapPopup').show();}
 

@@ -9,7 +9,7 @@
 
 ;
 (function ($) {
-
+    
     var settings = {
             cntClass: 'rd-mobilemenu',
             menuClass: 'rd-mobilemenu_ul',
@@ -248,13 +248,13 @@
         }
         return o;
     };
-
+    
     window.RDMobilemenu_autoinit = function (selector) {
         var o = $(selector);
         if (o.length) {
             new RDMobileMenu(o[0]).init();
         }
-    };
+    };   
 })(jQuery);
 
 $(document).ready(function () {
