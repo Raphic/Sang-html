@@ -59,6 +59,12 @@
         height: 50px;
         line-height: 52px;
     }
+    .title-03{
+        font-size: 24px;
+    }
+    .about-demo > .left p{
+        font-size: 26px;
+    }
 }
 /* 1080px
 ----------------------------------------------------------*/
@@ -109,33 +115,292 @@
         font-size: 20px;
     }
     .title-03{
-        font-size: 24px;
+        font-size: 22px;
+    }
+    .join .small{
+        font-size: 18px;
+    }
+    .partner  .box > div >  p{
+        margin-bottom: 5px !important;
+    }
+    .partner  .box > div{
+        margin-bottom: 10px;
+    }
+    .article-menu li {
+        margin-bottom: 15px;
+    }
+    .tabs-sp > label{
+        display: block;
+        text-align: left;
+    }
+    .show-content .warpt-img{
+        margin-bottom: 10px;
     }
 }
 /* 992px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
+    .box {
+        width: 730px;
+    }
     .header .menu-big{
         display: none;
     }
     #showMenu{
         display: block;
     }
+    .slider-home .left{
+        width: 55%;
+    }
+    .partner{
+        padding: 25px 0 10px;
+    }
+    .title-03{
+        line-height: inherit;
+        padding-top: 25px;
+    }
+    .category-menu > div{
+        width: 30%;
+    }
+    .about-demo > .left p{
+        font-size: 18px;
+    }
+    .slider-03 .swiper-container{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 30px;
+    }
 }
 /* 768px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
- 
+    .box {
+        width: 100%;
+        padding: 0 30px ;
+    }
+    .content{
+        padding: 35px 0 30px;
+    }
+    .slider-home,
+    .menu-mid,
+    .category-menu,
+    .slider-02 .swiper-slide{
+        display: block;
+    }
+    
+    .slider-home .left,
+    .slider-home .right,
+    .menu-mid > div,
+    .slider-img,
+    .slider-text,
+    .category-menu > div,
+    .article-box .left,
+    .article-box .right,
+    .checkout-address > div{
+        width: 100%;
+    }
+    .slider-home .left,
+    .slider-home .right{
+        margin-bottom: 15px;
+    }
+    .slider-home .left .slider-01{
+        max-height: inherit;
+    }
+    .slider-home .right .top{
+        min-height: inherit;
+    }
+    .menu-mid > div,
+    .category-menu > div,
+    .partner  .box > div,
+    .checkout-address > div{
+        margin-bottom: 30px;
+    }
+    .menu-mid > div{
+        text-align: center;
+    }
+    .menu-mid .title-02 + p {
+        margin-top: 5px;
+    }
+    .gallery-showcase{
+        margin-top: 50px;
+    }
+    .slider-02{
+        margin-top: 20px;
+    }
+    .footer-link > div > p{
+        margin-bottom: 5px;
+    }
+    .slider-text{
+        margin-left: 0;
+        padding-bottom: 85px;
+    }
+    .footer-link > div:not(:last-child){
+        margin-right: 0;
+    }
+    .footer-link > div{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    h1, h2, h3, h4, h5, h6, h7, p{
+        line-height: 1.4em;
+    }
+    .copy-right{
+        padding: 20px 20px 15px;
+    }
+    .copy-right p{
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+    .about-demo{
+        padding: 20px 20px 20px 30px;
+    }
+    .about-demo > .right p{
+        font-size: 54px;
+    }
+
+    .flex > .btn.md{
+        margin-bottom: 10px;
+    }
+    .chose-size-child{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .figures-child{
+        text-align: left;
+    }
+    .btn-figures{
+        margin-bottom: 10px;
+    }
+    .prices-table tfoot td{
+        text-align: center;
+    }
+/*
+    .checkout-box .table .tr > .td:first-child,
+    .checkout-box .table .tr > .td:nth-child(2){
+        width: inherit;
+    }
+    .checkout-box .table .tr > .td:nth-child(2){
+        margin-left: 10px;
+    }
+    .checkout-box{
+        overflow-x: scroll;
+    }
+    .checkout-box .table,
+    .total-price{
+        width: 675px;
+    }
+*/
 }
 /* 576px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
-  
+    
+    .header .icon{
+        display: none;
+    }
+    .about-demo > .left p{
+        line-height: 1.2em;
+        margin-top: 5px;
+    }
+    .about-demo > .left figure{
+        border: 5px solid #fff;
+    }
+    .about-demo > .right{
+        padding: 15px 15px 0;
+    }
+    .about-demo > .right p{
+        font-size: 36px;
+    }
+    .title-detail{
+        font-size: 26px;
+    }
+    .upload-child{
+        display: block;
+    }
+    .custom-file{
+        float: left;
+    }
+    .comment textarea{
+        width: 100%;
+    }
+    .had-img + a.text-underline{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+/* 480px
+----------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    .title-03{
+        font-size: 18px;
+    }
+    .slider-img .caption h1{
+        font-size: 24px;
+    }
+    .subscribe .input-wrapt input{
+        width: calc(100% - 120px);
+    }
+    .payment img{
+        margin-bottom: 5px;
+    }
+    .header .icon .logo{
+        width: calc(100% - 80px)
+    }
+    .footer-link > div{
+        width: 100%;
+        text-align: center;
+    }
+    .slider-03 .swiper-container{
+        padding: 0 20px;
+    }
+    .double-input .input-group,
+    .tripple-input .input-group:first-child{
+        width: 100%;
+    }
+    .tripple-input .input-group:not(:first-child){
+        width: 49%;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .cont-shopping .fa{
+        margin-bottom: 10px;
+    }
+}
+/* 390px
+----------------------------------------------------------*/
+@media only screen and (max-width: 390px){
+    html, body{
+        font-size: 14px;
+    }
+    .slider-img .caption p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .slider-img .caption h1,
+    .title-04{
+        font-size: 20px;
+    }
+    .about-demo{
+        padding: 25px 20px 10px;
+        display: block;
+    }
+    .about-demo > .left,
+    .about-demo > .right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 26px;
+    }
 }
 /* 320px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 320px){
-
+    .btn{
+        font-size: 22px;
+    }
 }
 
 

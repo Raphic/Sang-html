@@ -40,6 +40,22 @@ var swiper = new Swiper('.slider-03 .swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        480: {  
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        576: {  
+            slidesPerView: 3,
+        },
+        992: {
+            spaceBetween: 30,
+        }
+    }
 });
 
 

@@ -1,0 +1,21 @@
+.error_cart{border: 1px solid #ff0000 !important;}
+.green{color: #099139 !important;}
+.txt_center{text-align: center;}
+.detail-table p{padding: 10px 0;}
+.detail-table h2{padding: 10px 0; font-size: 16px;}
+.detail-table h3{padding: 5px 0;}
+.detail-table a{display: inline;}
+/*Fixed*/
+.right .home-cate-header.bottom p:first-child{width: 780px;}
+
+/**Ovewrite**/
+.drop-rate .btn-cancel,
+.drop-rate-form{
+    display: block;
+}
+.khong_kinh_doanh{
+	color: #d0021b;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
