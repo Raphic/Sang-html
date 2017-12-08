@@ -8,6 +8,8 @@
 @import "../css/responsive/normalize.css";
 @import "../css/responsive/component.css";
 @import "../css/reset.css";
+@import "../css/campare-img.css";
+
 @charset "utf-8";
 
 /* CSS Document */
@@ -1441,6 +1443,32 @@ table th {
     }
 }
 .perspective{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
+.samples-box{
+    margin-top: 15px;
+}
+.samples-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.samples-box .samples-item{
+    float: left;
+/*    width: 23%;*/
+    width: 262px;
+    height: 184px;
+/*    margin: 1%;*/
+    margin: 11px;
+}
+.samples-box .samples-item:first-child{
+/*    width: 48%;*/
+    width: 547px;
+    height: 390px;
+}
+
+.samples-box-detail{
+    margin: 20px auto 25px;
+}

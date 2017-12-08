@@ -65,6 +65,11 @@
     .about-demo > .left p{
         font-size: 26px;
     }
+    
+    .samples-box{
+        width: 855px;
+        margin: auto;
+    }
 }
 /* 1080px
 ----------------------------------------------------------*/
@@ -136,6 +141,10 @@
     .show-content .warpt-img{
         margin-bottom: 10px;
     }
+    .samples-box{
+        width: 570px;
+        margin-top: 15px;
+    }    
 }
 /* 992px
 ----------------------------------------------------------*/
@@ -283,7 +292,32 @@
     .prices-table tfoot td{
         text-align: center;
     }
-
+    .samples-box{
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .samples-box .samples-item{
+        width: 48%;
+        height: inherit;
+        margin: 5px 1%;
+        float: none;
+        clear: both;
+    }
+    .samples-box .samples-item:first-child{
+        width: 100%;
+        height: inherit;
+    }
+    .outer-nav{
+        font-size: 1.2em;
+    }
+    .outer-nav a .fa{
+        font-size: 24px;
+    }
+}
 /*
     .checkout-box .table .tr > .td:first-child,
     .checkout-box .table .tr > .td:nth-child(2){
@@ -376,6 +410,20 @@
     .cont-shopping .fa{
         margin-bottom: 10px;
     }
+    .samples-box .samples-item{
+        width: 100%;
+    }
+    .outer-nav a .fa{
+        margin-right: 10px;
+        font-size: 18px;
+        min-width: 20px;
+    }
+    .btn{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0 10px;
+    }
 }
 /* 390px
 ----------------------------------------------------------*/
@@ -402,7 +450,7 @@
     }
     .btn{
         font-size: 26px;
-    }
+    }   
 }
 /* 320px
 ----------------------------------------------------------*/
