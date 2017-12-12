@@ -447,7 +447,8 @@ select {
     text-decoration: underline;
 }
 
-.article-menu li a {
+.article-menu li a,
+.samples-caption p{
     color: #fff568;
 }
 
@@ -1462,13 +1463,21 @@ table th {
     height: 184px;
 /*    margin: 1%;*/
     margin: 11px;
+    position: relative;
 }
 .samples-box .samples-item:first-child{
 /*    width: 48%;*/
     width: 547px;
     height: 390px;
 }
-
+.samples-caption{
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 15px 10px;
+    position: absolute;
+    bottom: 0;
+}
 .samples-box-detail{
     margin: 20px auto 25px;
 }
