@@ -317,6 +317,20 @@
     .outer-nav a .fa{
         font-size: 24px;
     }
+    .contact-box{
+        
+    }
+    .getin,
+    .local{
+        width: 100%;    
+    }
+    .getin .text-right{
+        text-align: center;
+    }
+    .local{
+        margin-top: 2.5em;
+        text-align: center;
+    }
 }
 /*
     .checkout-box .table .tr > .td:first-child,

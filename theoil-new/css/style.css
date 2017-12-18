@@ -723,14 +723,17 @@ select {
     margin-bottom: 6px;
 }
 
-.input-group input {
+.input-group input,
+.input-group textarea{
     border-radius: 6px;
     border: solid 1px #b84f2b;
     background: #e29b83;
     height: 35px;
     width: 100%;
 }
-
+.input-group textarea{
+    min-height: 150px;
+}
 .double-input,
 .tripple-input {
     display: -webkit-box;
@@ -1243,7 +1246,15 @@ footer a {
     position: relative;
     height: 100%;
 }
-
+.btn-submit{
+    border: solid 2px #e55c1f;
+    background: rgba(255, 0, 0, 0.38);
+    width: 145px;
+    height: 47px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
 .csize {
     border-radius: 5px;
     background: rgba(247, 148, 29, 0.5);
@@ -1480,4 +1491,98 @@ table th {
 }
 .samples-box-detail{
     margin: 20px auto 25px;
+}
+
+.contact-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.contact-box > div{
+    
+}
+.getin{
+    width: 65%;
+}
+.local{
+    width: 28%;
+}
+.contact-box form{
+    margin-top: 20px;
+}
+
+.accordion-wrapt .tab-item {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+/*    border-bottom: 1px dashed #f8941d;*/
+}
+.accordion-wrapt .tab-item:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background: url(../images/title-detail-hr.png) no-repeat left center;
+}
+.accordion-wrapt input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion-wrapt label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    color: #f8941d;
+}
+
+.accordion-wrapt .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    transition: max-height .35s;
+}
+.accordion-wrapt .tab-content p{
+    margin: 0 0.5em 1em 2em;
+}
+/* :checked */
+.accordion-wrapt  input:checked ~ .tab-content {
+      max-height: 10em;
+}
+/* Icon */
+.accordion-wrapt label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    color: #f8941d;
+    text-align: center;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+.accordion-wrapt input[type=radio] + label::after {
+    content: "\25BC";
+}
+.accordion-wrapt input[type=checkbox]:checked + label::after {
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+.accordion-wrapt input[type=radio]:checked + label::after {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
 }
