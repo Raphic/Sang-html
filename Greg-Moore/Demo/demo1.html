@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/demo1.css" rel="stylesheet" type="text/css" />
+<!--
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+-->
+    <!--=====================Datepicker=======================-->
+<!--
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet" 
+    type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+-->
+    <!--=====================Datetimepicker=======================-->
+<!--
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+-->
+    
+</head>
+
+<body>
+    <div class="menu-wrapper">
+        <a href="#menu" class="menu-link">Menu<span class="fa fa-bars right" aria-hidden="true"></span></a>
+        <nav id="menu" role="navigation">
+            <div class="menu">
+                <ul  class="menu">
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li  class=" current-menu-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li  class="has-subnav">
+                        <a href="#">Our services</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Webdesign</a>
+                            </li>
+                            <li>
+                                <a href="#">Graphic identity</a>
+                            </li>
+                            <li>
+                                <a href="#">Copywriting</a>
+                            </li>
+                            <li>
+                                <a href="#">SEO & a longer menu item</a>
+                            </li>
+                            <li>
+                                <a href="#">Social networking</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Our Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+      <p>A responsive navigation menu for a project of mine. I needed the top level links (team, news, our services, our work, contact us) to be still clickable (because they send the user to a special page) so I needed to "split" the "presentation" link with an arrow for the responsive part.</p>
+      <p> Also note that font for the arrow are loaded from my dropbox so it won't appear on Firefox and IE (crossdomain issues I guess)</p>
+    </div>
+    <script>
+        $(document).ready(function() {
+        /* the Responsive menu script */
+            $('body').addClass('js');
+                  var $menu = $('#menu'),
+                      $menulink = $('.menu-link'),
+                      $menuTrigger = $('.has-subnav > a');
+
+            $menulink.click(function(e) {
+                    e.preventDefault();
+                    $menulink.toggleClass('active');
+                    $menu.toggleClass('active');
+            });
+
+            var add_toggle_links = function() { 		
+                if ($('.menu-link').is(":visible")){
+                    if ($(".toggle-link").length > 0){
+                    }
+                    else{
+                        $('.has-subnav > a').before('<span class="toggle-link"> Open submenu </span>');
+                        $('.toggle-link').click(function(e) {		
+                            var $this = $(this);
+                            $this.toggleClass('active').siblings('ul').toggleClass('active');
+                        });	
+                    }
+                }
+                else{
+                    $('.toggle-link').empty();
+                }
+            }
+            add_toggle_links();
+            $(window).bind("resize", add_toggle_links);	
+
+        });
+    </script>
+</body>
+
+</html>
