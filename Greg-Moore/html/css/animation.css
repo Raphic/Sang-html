@@ -1,0 +1,36 @@
+.state a:hover,
+.stare a:focus,
+.sub-card .back:hover,
+.sub-card .back:focus{
+    text-decoration: underline;
+}
+.btn-contact:hover,
+.btn-contact:focus{
+    border : 1px solid #ed1c24;
+    background: transparent;
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.my-profile li a:hover,
+.my-profile li a:focus{
+    color: #818181;
+}
+.inline-input:hover .edit,
+.inline-input:focus .edit{
+    margin-right: 0;
+    opacity: 1;
+}
+.slider-button:hover,
+.slider-button:focus{
+    background: var(--bg-yellow);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+footer .link-social li a:hover,
+footer .link-social li a:focus{
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out;
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    background: rgba(255,255,255,0);
+}

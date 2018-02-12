@@ -33,10 +33,10 @@ $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         centeredSlides: true,
-//        autoplay: {
-//            delay: 2500,
-//            disableOnInteraction: false,
-//        },
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -46,4 +46,54 @@ $(document).ready(function() {
             prevEl: '.swiper-button-prev',
         },
     });
+    
+    $('.box-login').click(function(){
+		$('.login-menu').toggleClass('open');
+        $('.my-profile').slideToggle('fast');
+	});
+    
+    $('.inline-input .edit').click(function(){
+        $(this).slideToggle(0);
+        $(this).closest('.inline-input').find('.profile-save').slideToggle();
+        $(this).closest('.inline-input').find('.profile-cancel').slideToggle();
+		$(this).closest('.inline-input').find('input').removeAttr("disabled");
+	});
+    
+    $('.inline-input .profile-save').click(function(){
+        $(this).closest('.inline-input').find('.profile-save').slideToggle();
+        $(this).closest('.inline-input').find('.profile-cancel').slideToggle();
+        $(this).closest('.inline-input').find('.edit').delay(1000).slideToggle();
+    });
+    $('.inline-input .profile-cancel').click(function(){
+        $(this).closest('.inline-input').find('.profile-save').slideToggle();
+        $(this).closest('.inline-input').find('.profile-cancel').slideToggle();
+        $(this).closest('.inline-input').find('input').attr("disabled","disabled");
+        $(this).closest('.inline-input').find('.edit').delay(1000).slideToggle();
+    }); 
+    
+    
+    $('#map').usmap({
+	    'stateSpecificStyles': {
+	      'AK' : {fill: '#f00'}
+	    },
+	    'stateSpecificHoverStyles': {
+	      'HI' : {fill: '#ff0'}
+	    },
+	    
+	    'mouseoverState': {
+	      'HI' : function(event, data) {
+	        //return false;
+	      }
+	    },
+	    'click' : function(event, data) {
+	      $('#alert')
+	        .text('Click '+data.name+' on map 1')
+	        .stop()
+	        .css('backgroundColor', '#ff0')
+	        .animate({backgroundColor: '#ddd'}, 1000);
+	    }
+    });
+    
+    
+
 });

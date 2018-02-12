@@ -10,24 +10,305 @@
 /* 992px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 992px) {
-
+    .warpt{
+        width: 100%;
+    }
+    .menu-wrapper ul.menu{
+        margin-left: 3em;
+    }
+    .menu-wrapper .menu > li{
+        padding: 0 5px 0 10px;
+    }
 }
 /* 768px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
- 
+    /*========== Menu ==========*/
+    .button {
+        width: 55px;
+        height: 45px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        z-index: 12399994;
+    }
+    .button:before {
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        position: absolute;
+        top: 14px;
+        right: 20px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #e8641b;
+        content: '';
+    }
+    .button:after {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        height: 4px;
+        width: 20px;
+        border-top: 2px solid #e8641b;
+        border-bottom: 2px solid #e8641b;
+        content: '';
+    }
+    .menu-link.active .button:after {
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        top: 20px;
+        border: 0;
+        height: 2px;
+        width: 19px;
+        background: #e8641b;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    .menu-link.active .button:before {
+        top: 23px;
+        background: #e8641b;
+        width: 19px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    .js .menu-wrapper nav[role=navigation]{
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        top: 40px;
+        background: #e8641b;
+        -webkit-transition: max-height 0.5s ease-out;
+        transition: max-height 0.5s ease-out;
+    }
+    .js .menu-wrapper nav[role=navigation] .menu > li:nth-child(even):after{
+        content: none;
+    }
+    .js .menu-wrapper nav[role=navigation] .menu li{
+        border-top: 1px solid rgba(255,255,255,0.7);
+    }
+    .js .menu-wrapper nav[role=navigation] .menu a{
+        padding: 17px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+    .js .menu-wrapper nav[role=navigation] .menu a:hover{
+        background: #bd5013;
+    }
+    .body{
+        min-height: 0;
+        padding: 0;
+    }
+    .warpt{
+        width: 100%;
+        margin-top: 40px;
+    }
+    header{
+        height: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .menu-wrapper{
+        padding: 0;
+        height: 40px;
+        
+    }
+    a.logo{
+        height: 40px;
+        padding: 0 20px;
+        line-height: 40px;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    a.top-search{
+        width: auto;
+        display: inline-block;
+        padding: 0 20px;
+        height: 32px;
+        line-height: 32px;
+        top: 4px;
+    }
+    a.top-search i{
+        font-size: 18px;
+        margin-left: 0;
+    }
+    a.top-search span{
+        display: none;
+    }
+    .login-menu{
+        width: 3px;
+    }
+    .login-menu.open{
+        width: 27px;
+    }
+    .box-login{
+        width: 30px;
+    }
+    .box-login{
+        top: 3px;
+        right: 5px;
+        background: transparent;
+    }
+    .login-menu span{
+        background: #818181   ; 
+    }
+    .slider .swiper-container {
+        height: 280px;
+    }
+    .slider-text{
+        padding: 20px 30px;
+    }
+    .slider-title{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .slider-cap{
+        font-size: 16px;
+    }
+    .slider-button{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        margin-top: 15px;
+        line-height: 40px;
+        padding: 0 15px;
+    }
+    .box-content h2.title-content{
+        font-size: 26px;
+    }
+    .box-content h3.title-content{
+        font-size: 22px;
+    }
+    .state li{
+        width: 50%;
+    }
+    footer{
+        text-align: center;
+    }
+    .link-social{
+        margin: 1em auto 0.5em;
+    }
+    .content{
+        min-height: 30px;
+    }
+    .form-profile{
+        width: 100%;
+    }
+    .right{
+        margin-left: 0;
+    }
+    .sub-card{
+        margin: 0 5px 10px;
+    }
+    .box-subcription{
+        margin-bottom: 20px;
+    }
+    .big-text{
+        font-size: 54px;
+    }
 }
 /* 576px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 576px) {
-  
+    .sub-card.detail{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .btn-back, 
+    .btn-download{
+        font-size: 18px;   
+        height: inherit;
+    }
+    .btn-download img{
+        height: 100%;
+        width: 100%;
+    }
+}
+/* 480px
+----------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+    .slider-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .slider-cap{
+        font-size: 14px;
+    }
+    .slider-button{
+        font-size: 18px;
+        line-height: 36px;
+        margin-top: 10px;
+    }
+    .box-content h2.title-content{
+        font-size: 24px;
+    }
+    .box-content h3.title-content{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .state li{
+        width: 100%;
+    }
+    .content{
+        padding: 5px 15px;
+    }
+    .sub-card.detail .left,
+    .sub-card.detail .right{
+        width: 100%;
+    }
+    .btn-card-detail{
+        margin-top: 1em;
+    }
+    .big-text{
+        font-size: 40px;
+    }
+}
+/* 375px
+----------------------------------------------------------*/
+@media only screen and (max-width: 375px){
+    .box-content h2.title-content:after, 
+    .box-content h3.title-content:after{
+        content: none;
+    }
+    .box-content h2.title-content{
+        margin-bottom: 10px;
+        white-space: pre-wrap;
+    }
+    .box-content h3.title-content{
+        font-size: 18px;
+        margin-bottom: 10px;
+        white-space: pre-wrap;
+    }
+    .box-form{
+        width: 100%;
+    }
+    .capcha img{
+        width: 100%;
+    }
+    .inline-input label{
+        width: 100%;
+    }
+    .inline-input input{
+        width: calc(100% - 95px);
+    }
+    .sub-card.detail .right > div p{
+        width: 100%;
+    }
 }
 /* 320px
 ----------------------------------------------------------*/
 @media only screen and (max-width: 320px){
 
 }
-
 
 
 
