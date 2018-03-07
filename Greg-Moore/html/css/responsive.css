@@ -207,7 +207,8 @@
         margin-left: 0;
     }
     .sub-card{
-        margin: 0 5px 10px;
+        margin: 0 1% 10px;
+        width: 48%;
     }
     .box-subcription{
         margin-bottom: 20px;
@@ -300,6 +301,10 @@
     .inline-input input{
         width: calc(100% - 95px);
     }
+    .sub-card{
+        margin: 0 0 10px;
+        width: 100%;
+    }
     .sub-card.detail .right > div p{
         width: 100%;
     }
@@ -309,16 +314,6 @@
 @media only screen and (max-width: 320px){
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -27,7 +27,7 @@ body {
         url(../img/bg/bg-body.png) repeat;
     min-height: 1070px;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 0;      
 }
 p{
     line-height: 1.5em;
@@ -409,7 +409,7 @@ footer .link-social li a{
 }
 /*========== Subcription ==========*/
 .box-subcription{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .sub-card{
     border-radius: 10px;
@@ -419,10 +419,14 @@ footer .link-social li a{
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.17);
     width: 200px;
     min-height: 300px;
-    padding: 25px 30px;
+    padding: 25px 5px 60px;
     position: relative;
     text-align: center;
-    margin: 0 30px;
+    margin: 0 15px;
+}
+.sub-card.best{
+    -webkit-box-shadow: 0 0 5px 0px #d70006;
+    box-shadow: 0 0 5px 0px #d70006;
 }
 .sub-card img:not(.best-seller){
     height: 100px;
@@ -430,10 +434,20 @@ footer .link-social li a{
 .sub-card .best-seller{
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0;   
 }
 .sub-card p{
-    line-height: 1.2em;
+    line-height: 1.4em;
+}
+.sub-card p.text-02{
+    text-align: left;
+    border-top: 1px solid #d5d5d5;
+    padding: 6px 8px 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.sub-card p:nth-child(4){
+    border-top: none;
 }
 .sub-card h3{
     color: var(--color-blue);
@@ -443,7 +457,7 @@ footer .link-social li a{
 }
 .card-price{
     color: #ee1c24;
-    
+    font-size: 18px; 
 }
 .btn-card{
     border-radius: 10px;
@@ -465,7 +479,7 @@ footer .link-social li a{
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
