@@ -120,6 +120,13 @@
         height: 40px;
         
     }
+    
+    .menu-wrapper ul.menu{
+        margin-left: 0em;
+    }
+    .menu-wrapper .menu > li{
+        padding-left: 0;
+    }
     a.logo{
         height: 40px;
         padding: 0 20px;
@@ -306,6 +313,9 @@
         width: 100%;
     }
     .sub-card.detail .right > div p{
+        width: 100%;
+    }
+    .double-input .box-input {
         width: 100%;
     }
 }
